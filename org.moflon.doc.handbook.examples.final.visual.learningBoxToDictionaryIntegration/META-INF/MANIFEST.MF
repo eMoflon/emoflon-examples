@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: LearningBoxToDictionaryIntegration;singleton:=tru
+ e
+Export-Package: LearningBoxToDictionaryIntegration.impl,
+ LearningBoxToDictionaryIntegration.Rules.util,
+ LearningBoxToDictionaryIntegration.util,
+ LearningBoxToDictionaryIntegration.Rules,
+ LearningBoxToDictionaryIntegration.Rules.impl,
+ LearningBoxToDictionaryIntegration
+Bundle-Name: LearningBoxToDictionaryIntegration
+Bundle-Version: 1.0
+Require-Bundle: LearningBoxLanguage,
+ DictionaryLanguage,
+ org.eclipse.emf.ecore,
+ org.moflon.core.utilities,
+ SDMLanguage,
+ org.eclipse.emf.ecore.xmi,
+ org.apache.log4j;bundle-version="1.2.15",
+ MocaTree,
+ org.eclipse.core.runtime,
+ org.moflon.tgg.language,
+ org.moflon.tgg.runtime,
+ org.moflon.tgg.debug.language
+Bundle-ManifestVersion: 2
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Vendor: TU Darmstadt

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?eclipse version="3.0"?><plugin>
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package class="DictionaryCodeAdapter.DictionaryCodeAdapterPackage" genModel="model/DictionaryCodeAdapter.genmodel" uri="platform:/plugin/DictionaryCodeAdapter/model/DictionaryCodeAdapter.ecore"/>
+  </extension>
+  <extension point="org.eclipse.emf.ecore.generated_package">
+    <package class="DictionaryCodeAdapter.Rules.RulesPackage" genModel="model/DictionaryCodeAdapter.genmodel" uri="platform:/plugin/DictionaryCodeAdapter/model/DictionaryCodeAdapter.ecore#//Rules"/>
+  </extension>
+</plugin>

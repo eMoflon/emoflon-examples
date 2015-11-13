@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="ASCII"?>
+<TGGRuntime:CorrespondenceModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:LearningBoxToDictionaryIntegration="http://www.moflon.org.LearningBoxToDictionaryIntegration" xmlns:TGGRuntime="http://www.moflon.org.TGGRuntime">
+  <correspondences xsi:type="LearningBoxToDictionaryIntegration:BoxToDictionary">
+    <source href="fwd.src.xmi#/"/>
+    <target href="fwd.trg.xmi#/"/>
+  </correspondences>
+  <correspondences xsi:type="LearningBoxToDictionaryIntegration:CardToEntry">
+    <source href="fwd.src.xmi#//@containedPartition.0/@card.0"/>
+    <target href="fwd.trg.xmi#//@entry.0"/>
+  </correspondences>
+  <correspondences xsi:type="LearningBoxToDictionaryIntegration:CardToEntry">
+    <source href="fwd.src.xmi#//@containedPartition.1/@card.0"/>
+    <target href="fwd.trg.xmi#//@entry.1"/>
+  </correspondences>
+  <correspondences xsi:type="LearningBoxToDictionaryIntegration:CardToEntry">
+    <source href="fwd.src.xmi#//@containedPartition.2/@card.0"/>
+    <target href="fwd.trg.xmi#//@entry.2"/>
+  </correspondences>
+  <correspondences xsi:type="LearningBoxToDictionaryIntegration:CardToEntry">
+    <source href="fwd.src.xmi#//@containedPartition.3/@card.0"/>
+    <target href="fwd.trg.xmi#//@entry.3"/>
+  </correspondences>
+  <source href="fwd.src.xmi#/"/>
+  <target href="fwd.trg.xmi#/"/>
+  <consistencyTable>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.0 //@sourceEdgeTable/@edge.1 //@sourceEdgeTable/@edge.2 //@sourceEdgeTable/@edge.3 //@sourceEdgeTable/@edge.4 //@sourceEdgeTable/@edge.5 //@sourceEdgeTable/@edge.6" correspondenceNodes="//@correspondences.0">
+      <targetNodes href="fwd.trg.xmi#/"/>
+      <sourceNodes href="fwd.src.xmi#/"/>
+      <sourceNodes href="fwd.src.xmi#//@containedPartition.2"/>
+      <sourceNodes href="fwd.src.xmi#//@containedPartition.1"/>
+      <sourceNodes href="fwd.src.xmi#//@containedPartition.0"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.7" targetEdges="//@targetEdgeTable/@edge.0" correspondenceNodes="//@correspondences.1">
+      <targetNodes href="fwd.trg.xmi#//@entry.0"/>
+      <sourceNodes href="fwd.src.xmi#//@containedPartition.0/@card.0"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.8" targetEdges="//@targetEdgeTable/@edge.1" correspondenceNodes="//@correspondences.2">
+      <targetNodes href="fwd.trg.xmi#//@entry.1"/>
+      <sourceNodes href="fwd.src.xmi#//@containedPartition.1/@card.0"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.9" targetEdges="//@targetEdgeTable/@edge.2" correspondenceNodes="//@correspondences.3">
+      <targetNodes href="fwd.trg.xmi#//@entry.2"/>
+      <sourceNodes href="fwd.src.xmi#//@containedPartition.2/@card.0"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.10 //@sourceEdgeTable/@edge.11 //@sourceEdgeTable/@edge.12">
+      <sourceNodes href="fwd.src.xmi#//@containedPartition.3"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.13" targetEdges="//@targetEdgeTable/@edge.3" correspondenceNodes="//@correspondences.4">
+      <targetNodes href="fwd.trg.xmi#//@entry.3"/>
+      <sourceNodes href="fwd.src.xmi#//@containedPartition.3/@card.0"/>
+    </entry>
+  </consistencyTable>
+  <targetEdgeTable>
+    <edge name="entry">
+      <src href="fwd.trg.xmi#/"/>
+      <trg href="fwd.trg.xmi#//@entry.0"/>
+    </edge>
+    <edge name="entry">
+      <src href="fwd.trg.xmi#/"/>
+      <trg href="fwd.trg.xmi#//@entry.1"/>
+    </edge>
+    <edge name="entry">
+      <src href="fwd.trg.xmi#/"/>
+      <trg href="fwd.trg.xmi#//@entry.2"/>
+    </edge>
+    <edge name="entry">
+      <src href="fwd.trg.xmi#/"/>
+      <trg href="fwd.trg.xmi#//@entry.3"/>
+    </edge>
+  </targetEdgeTable>
+  <sourceEdgeTable>
+    <edge name="containedPartition">
+      <src href="fwd.src.xmi#/"/>
+      <trg href="fwd.src.xmi#//@containedPartition.1"/>
+    </edge>
+    <edge name="previous">
+      <src href="fwd.src.xmi#//@containedPartition.0"/>
+      <trg href="fwd.src.xmi#//@containedPartition.2"/>
+    </edge>
+    <edge name="next">
+      <src href="fwd.src.xmi#//@containedPartition.2"/>
+      <trg href="fwd.src.xmi#//@containedPartition.1"/>
+    </edge>
+    <edge name="containedPartition">
+      <src href="fwd.src.xmi#/"/>
+      <trg href="fwd.src.xmi#//@containedPartition.0"/>
+    </edge>
+    <edge name="previous">
+      <src href="fwd.src.xmi#//@containedPartition.1"/>
+      <trg href="fwd.src.xmi#//@containedPartition.2"/>
+    </edge>
+    <edge name="next">
+      <src href="fwd.src.xmi#//@containedPartition.1"/>
+      <trg href="fwd.src.xmi#//@containedPartition.0"/>
+    </edge>
+    <edge name="containedPartition">
+      <src href="fwd.src.xmi#/"/>
+      <trg href="fwd.src.xmi#//@containedPartition.2"/>
+    </edge>
+    <edge name="card">
+      <src href="fwd.src.xmi#//@containedPartition.0"/>
+      <trg href="fwd.src.xmi#//@containedPartition.0/@card.0"/>
+    </edge>
+    <edge name="card">
+      <src href="fwd.src.xmi#//@containedPartition.1"/>
+      <trg href="fwd.src.xmi#//@containedPartition.1/@card.0"/>
+    </edge>
+    <edge name="card">
+      <src href="fwd.src.xmi#//@containedPartition.2"/>
+      <trg href="fwd.src.xmi#//@containedPartition.2/@card.0"/>
+    </edge>
+    <edge name="next">
+      <src href="fwd.src.xmi#//@containedPartition.0"/>
+      <trg href="fwd.src.xmi#//@containedPartition.3"/>
+    </edge>
+    <edge name="previous">
+      <src href="fwd.src.xmi#//@containedPartition.3"/>
+      <trg href="fwd.src.xmi#//@containedPartition.2"/>
+    </edge>
+    <edge name="containedPartition">
+      <src href="fwd.src.xmi#/"/>
+      <trg href="fwd.src.xmi#//@containedPartition.3"/>
+    </edge>
+    <edge name="card">
+      <src href="fwd.src.xmi#//@containedPartition.3"/>
+      <trg href="fwd.src.xmi#//@containedPartition.3/@card.0"/>
+    </edge>
+  </sourceEdgeTable>
+</TGGRuntime:CorrespondenceModel>

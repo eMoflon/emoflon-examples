@@ -1,0 +1,13 @@
+group Dictionary;
+
+dictionary(name, author, entries) ::= <<
+title: "<name>"
+<if(author)>email: "<author>"<endif>
+{ 
+	<entires; separator="\n">
+}
+>>
+
+entry(entry, level) ::= <<
+"<entry>", <level>
+>>

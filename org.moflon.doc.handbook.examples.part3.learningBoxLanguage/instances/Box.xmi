@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ASCII"?>
+<LearningBoxLanguage:Box
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:LearningBoxLanguage="platform:/plugin/LearningBoxLanguage/model/LearningBoxLanguage.ecore"
+    xsi:schemaLocation="platform:/plugin/LearningBoxLanguage/model/LearningBoxLanguage.ecore ../model/LearningBoxLanguage.ecore">
+  <containedPartition
+      previous="//@containedPartition.0"
+      next="//@containedPartition.1"
+      index="1">
+    <card back="One"
+        face="1"/>
+    <card back="Two"
+        face="2"/>
+  </containedPartition>
+  <containedPartition
+      previous="//@containedPartition.0"
+      next="//@containedPartition.2"
+      index="2">
+    <card back="Three"
+        face="3"/>
+    <card back="Four"
+        face="4"/>
+  </containedPartition>
+  <containedPartition
+      previous="//@containedPartition.0"
+      next="//@containedPartition.2"
+      index="3">
+    <card back="Five"
+        face="5"/>
+    <card back="Six"
+        face="6"/>
+  </containedPartition>
+</LearningBoxLanguage:Box>

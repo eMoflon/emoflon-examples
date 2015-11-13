@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ASCII"?>
+<protocol:TranslationProtocol xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:protocol="http://www.moflon.org.TGGLanguage.algorithm.protocol">
+  <translationstep xsi:type="protocol:StartTranslation" node="LearningBoxLanguage.impl.CardImpl@1f0480e1 (back: Question Five, face: Answer Feunf, partitionHistory: null)">
+    <entryNode href="sync.fwd.src.xmi#//@containedPartition.3/@card.1"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:CandidateProtocol">
+    <candidates xsi:type="protocol:AppropriateCandidate" rule="CardToEntryRule" isAppropriateName="isAppropriate_FWD_Card_0"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperation" name="CardToEntryRule : isApplicable_FWD">
+    <entryNode href="sync.fwd.src.xmi#//@containedPartition.3/@card.1"/>
+  </translationstep>
+  <translationstep xsi:type="protocol:PerformOperationSuccessful" name="CardToEntryRule : perform_FWD">
+    <translatedelements href="sync.fwd.src.xmi#//@containedPartition.3/@card.1"/>
+    <createdElements href="sync.fwd.trg.xmi#//@entry.4"/>
+    <createdElements href="sync.fwd.corr.xmi#//@correspondences.5"/>
+    <createdEdges name="source">
+      <source href="sync.fwd.corr.xmi#//@correspondences.5"/>
+      <target href="sync.fwd.src.xmi#//@containedPartition.3/@card.1"/>
+    </createdEdges>
+    <createdEdges name="entry">
+      <source href="sync.fwd.trg.xmi#/"/>
+      <target href="sync.fwd.trg.xmi#//@entry.4"/>
+    </createdEdges>
+    <createdEdges name="target">
+      <source href="sync.fwd.corr.xmi#//@correspondences.5"/>
+      <target href="sync.fwd.trg.xmi#//@entry.4"/>
+    </createdEdges>
+    <translatedEdges name="card">
+      <source href="sync.fwd.src.xmi#//@containedPartition.3"/>
+      <target href="sync.fwd.src.xmi#//@containedPartition.3/@card.1"/>
+    </translatedEdges>
+  </translationstep>
+</protocol:TranslationProtocol>

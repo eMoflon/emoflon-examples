@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?eclipse version="3.0"?><plugin>&gt;
+<extension point="org.eclipse.emf.ecore.generated_package">
+    <package class="LearningBoxLanguage.LearningBoxLanguagePackage" genModel="model/LearningBoxLanguage.genmodel" uri="platform:/plugin/LearningBoxLanguage/model/LearningBoxLanguage.ecore"/>
+  </extension>
+</plugin>

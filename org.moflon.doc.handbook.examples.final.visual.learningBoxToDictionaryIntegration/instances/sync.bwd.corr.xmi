@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="ASCII"?>
+<TGGRuntime:CorrespondenceModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:LearningBoxToDictionaryIntegration="http://www.moflon.org.LearningBoxToDictionaryIntegration" xmlns:TGGRuntime="http://www.moflon.org.TGGRuntime">
+  <correspondences xsi:type="LearningBoxToDictionaryIntegration:BoxToDictionary">
+    <source href="sync.bwd.src.xmi#/"/>
+    <target href="sync.bwd.trg.xmi#/"/>
+  </correspondences>
+  <correspondences xsi:type="LearningBoxToDictionaryIntegration:CardToEntry">
+    <source href="sync.bwd.src.xmi#//@containedPartition.1/@card.0"/>
+    <target href="sync.bwd.trg.xmi#//@entry.0"/>
+  </correspondences>
+  <correspondences xsi:type="LearningBoxToDictionaryIntegration:CardToEntry">
+    <source href="sync.bwd.src.xmi#//@containedPartition.2/@card.0"/>
+    <target href="sync.bwd.trg.xmi#//@entry.1"/>
+  </correspondences>
+  <correspondences xsi:type="LearningBoxToDictionaryIntegration:CardToEntry">
+    <source href="sync.bwd.src.xmi#//@containedPartition.3/@card.0"/>
+    <target href="sync.bwd.trg.xmi#//@entry.2"/>
+  </correspondences>
+  <source href="sync.bwd.src.xmi#/"/>
+  <sourcePrecedenceGraph>
+    <equivalenceclass edge="//@sourceEdgeTable/@edge.10 //@sourceEdgeTable/@edge.11 //@sourceEdgeTable/@edge.9" succeeding="//@sourcePrecedenceGraph/@equivalenceclass.4">
+      <eobject href="sync.bwd.src.xmi#//@containedPartition.3"/>
+    </equivalenceclass>
+    <equivalenceclass edge="//@sourceEdgeTable/@edge.4 //@sourceEdgeTable/@edge.6 //@sourceEdgeTable/@edge.0 //@sourceEdgeTable/@edge.1 //@sourceEdgeTable/@edge.2 //@sourceEdgeTable/@edge.5 //@sourceEdgeTable/@edge.3" succeeding="//@sourcePrecedenceGraph/@equivalenceclass.0 //@sourcePrecedenceGraph/@equivalenceclass.2 //@sourcePrecedenceGraph/@equivalenceclass.3 //@sourcePrecedenceGraph/@equivalenceclass.4">
+      <eobject href="sync.bwd.src.xmi#//@containedPartition.0"/>
+      <eobject href="sync.bwd.src.xmi#/"/>
+      <eobject href="sync.bwd.src.xmi#//@containedPartition.1"/>
+      <eobject href="sync.bwd.src.xmi#//@containedPartition.2"/>
+    </equivalenceclass>
+    <equivalenceclass edge="//@sourceEdgeTable/@edge.7">
+      <eobject href="sync.bwd.src.xmi#//@containedPartition.1/@card.0"/>
+    </equivalenceclass>
+    <equivalenceclass edge="//@sourceEdgeTable/@edge.8">
+      <eobject href="sync.bwd.src.xmi#//@containedPartition.2/@card.0"/>
+    </equivalenceclass>
+    <equivalenceclass edge="//@sourceEdgeTable/@edge.12">
+      <eobject href="sync.bwd.src.xmi#//@containedPartition.3/@card.0"/>
+    </equivalenceclass>
+  </sourcePrecedenceGraph>
+  <targetPrecedenceGraph>
+    <equivalenceclass succeeding="//@targetPrecedenceGraph/@equivalenceclass.1 //@targetPrecedenceGraph/@equivalenceclass.2 //@targetPrecedenceGraph/@equivalenceclass.3">
+      <eobject href="sync.bwd.trg.xmi#/"/>
+    </equivalenceclass>
+    <equivalenceclass edge="//@targetEdgeTable/@edge.0">
+      <eobject href="sync.bwd.trg.xmi#//@entry.0"/>
+    </equivalenceclass>
+    <equivalenceclass edge="//@targetEdgeTable/@edge.1">
+      <eobject href="sync.bwd.trg.xmi#//@entry.1"/>
+    </equivalenceclass>
+    <equivalenceclass edge="//@targetEdgeTable/@edge.2">
+      <eobject href="sync.bwd.trg.xmi#//@entry.2"/>
+    </equivalenceclass>
+  </targetPrecedenceGraph>
+  <target href="sync.bwd.trg.xmi#/"/>
+  <consistencyTable>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.0 //@sourceEdgeTable/@edge.1 //@sourceEdgeTable/@edge.2 //@sourceEdgeTable/@edge.3 //@sourceEdgeTable/@edge.4 //@sourceEdgeTable/@edge.5 //@sourceEdgeTable/@edge.6" correspondenceNodes="//@correspondences.0">
+      <targetNodes href="sync.bwd.trg.xmi#/"/>
+      <sourceNodes href="sync.bwd.src.xmi#/"/>
+      <sourceNodes href="sync.bwd.src.xmi#//@containedPartition.2"/>
+      <sourceNodes href="sync.bwd.src.xmi#//@containedPartition.1"/>
+      <sourceNodes href="sync.bwd.src.xmi#//@containedPartition.0"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.7" targetEdges="//@targetEdgeTable/@edge.0" correspondenceNodes="//@correspondences.1">
+      <targetNodes href="sync.bwd.trg.xmi#//@entry.0"/>
+      <sourceNodes href="sync.bwd.src.xmi#//@containedPartition.1/@card.0"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.8" targetEdges="//@targetEdgeTable/@edge.1" correspondenceNodes="//@correspondences.2">
+      <targetNodes href="sync.bwd.trg.xmi#//@entry.1"/>
+      <sourceNodes href="sync.bwd.src.xmi#//@containedPartition.2/@card.0"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.9 //@sourceEdgeTable/@edge.10 //@sourceEdgeTable/@edge.11">
+      <sourceNodes href="sync.bwd.src.xmi#//@containedPartition.3"/>
+    </entry>
+    <entry sourceEdges="//@sourceEdgeTable/@edge.12" targetEdges="//@targetEdgeTable/@edge.2" correspondenceNodes="//@correspondences.3">
+      <targetNodes href="sync.bwd.trg.xmi#//@entry.2"/>
+      <sourceNodes href="sync.bwd.src.xmi#//@containedPartition.3/@card.0"/>
+    </entry>
+  </consistencyTable>
+  <targetEdgeTable>
+    <edge name="entry">
+      <src href="sync.bwd.trg.xmi#/"/>
+      <trg href="sync.bwd.trg.xmi#//@entry.0"/>
+    </edge>
+    <edge name="entry">
+      <src href="sync.bwd.trg.xmi#/"/>
+      <trg href="sync.bwd.trg.xmi#//@entry.1"/>
+    </edge>
+    <edge name="entry">
+      <src href="sync.bwd.trg.xmi#/"/>
+      <trg href="sync.bwd.trg.xmi#//@entry.2"/>
+    </edge>
+  </targetEdgeTable>
+  <sourceEdgeTable>
+    <edge name="containedPartition">
+      <src href="sync.bwd.src.xmi#/"/>
+      <trg href="sync.bwd.src.xmi#//@containedPartition.1"/>
+    </edge>
+    <edge name="previous">
+      <src href="sync.bwd.src.xmi#//@containedPartition.0"/>
+      <trg href="sync.bwd.src.xmi#//@containedPartition.2"/>
+    </edge>
+    <edge name="next">
+      <src href="sync.bwd.src.xmi#//@containedPartition.2"/>
+      <trg href="sync.bwd.src.xmi#//@containedPartition.1"/>
+    </edge>
+    <edge name="containedPartition">
+      <src href="sync.bwd.src.xmi#/"/>
+      <trg href="sync.bwd.src.xmi#//@containedPartition.0"/>
+    </edge>
+    <edge name="previous">
+      <src href="sync.bwd.src.xmi#//@containedPartition.1"/>
+      <trg href="sync.bwd.src.xmi#//@containedPartition.2"/>
+    </edge>
+    <edge name="next">
+      <src href="sync.bwd.src.xmi#//@containedPartition.1"/>
+      <trg href="sync.bwd.src.xmi#//@containedPartition.0"/>
+    </edge>
+    <edge name="containedPartition">
+      <src href="sync.bwd.src.xmi#/"/>
+      <trg href="sync.bwd.src.xmi#//@containedPartition.2"/>
+    </edge>
+    <edge name="card">
+      <src href="sync.bwd.src.xmi#//@containedPartition.1"/>
+      <trg href="sync.bwd.src.xmi#//@containedPartition.1/@card.0"/>
+    </edge>
+    <edge name="card">
+      <src href="sync.bwd.src.xmi#//@containedPartition.2"/>
+      <trg href="sync.bwd.src.xmi#//@containedPartition.2/@card.0"/>
+    </edge>
+    <edge name="next">
+      <src href="sync.bwd.src.xmi#//@containedPartition.0"/>
+      <trg href="sync.bwd.src.xmi#//@containedPartition.3"/>
+    </edge>
+    <edge name="previous">
+      <src href="sync.bwd.src.xmi#//@containedPartition.3"/>
+      <trg href="sync.bwd.src.xmi#//@containedPartition.2"/>
+    </edge>
+    <edge name="containedPartition">
+      <src href="sync.bwd.src.xmi#/"/>
+      <trg href="sync.bwd.src.xmi#//@containedPartition.3"/>
+    </edge>
+    <edge name="card">
+      <src href="sync.bwd.src.xmi#//@containedPartition.3"/>
+      <trg href="sync.bwd.src.xmi#//@containedPartition.3/@card.0"/>
+    </edge>
+  </sourceEdgeTable>
+</TGGRuntime:CorrespondenceModel>

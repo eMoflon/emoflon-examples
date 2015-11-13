@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ASCII"?>
+<MoflonPropertyContainer:MoflonPropertiesContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:MoflonPropertyContainer="platform:/plugin/MoflonPropertyContainer/model/MoflonPropertyContainer.ecore" projectName="LearningBoxToDictionaryIntegration">
+  <dependencies value="platform:/plugin/DictionaryLanguage/model/DictionaryLanguage.ecore"/>
+  <dependencies value="platform:/plugin/LearningBoxLanguage/model/LearningBoxLanguage.ecore"/>
+  <dependencies value="platform:/plugin/MocaTree/model/MocaTree.ecore"/>
+  <dependencies value="platform:/plugin/SDMLanguage/model/SDMLanguage.ecore"/>
+  <dependencies value="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore"/>
+  <dependencies value="platform:/plugin/org.moflon.tgg.language/model/Language.ecore"/>
+  <dependencies value="platform:/plugin/org.moflon.tgg.runtime/model/Runtime.ecore"/>
+  <metaModelProject MetaModelProjectName="LeitnersLearningBox"/>
+  <replaceGenModel/>
+  <sdmCodegeneratorHandlerId value="DEMOCLES_REVERSE_NAVI"/>
+  <tGGBuildMode/>
+</MoflonPropertyContainer:MoflonPropertiesContainer>

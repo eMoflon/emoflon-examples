@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ASCII"?>
+<LearningBoxLanguage:Box xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:LearningBoxLanguage="http://www.moflon.org.LearningBoxLanguage" name="English Numbers">
+  <containedPartition next="//@containedPartition.3" previous="//@containedPartition.2" index="2">
+    <card back="Question Three " face="Answer Drei"/>
+  </containedPartition>
+  <containedPartition next="//@containedPartition.0" previous="//@containedPartition.2" index="1">
+    <card back="Question Two " face="Answer Zwei"/>
+  </containedPartition>
+  <containedPartition next="//@containedPartition.1">
+    <card back="Question One " face="Answer Eins"/>
+  </containedPartition>
+  <containedPartition previous="//@containedPartition.2" index="3">
+    <card back="Question Four" face="Answer Vier"/>
+    <card back="Question Five" face="Answer Feunf"/>
+  </containedPartition>
+</LearningBoxLanguage:Box>

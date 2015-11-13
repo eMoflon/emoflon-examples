@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/LearningBoxLanguage/gen" modelPluginID="LearningBoxLanguage"
+    modelName="LearningBoxLanguage" updateClasspath="false" codeFormatting="true"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    operationReflection="true">
+  <foreignModel>LearningBoxLanguage.ecore</foreignModel>
+  <genPackages prefix="LearningBoxLanguage" disposableProviderFactory="true" ecorePackage="platform:/plugin/LearningBoxLanguage/model/LearningBoxLanguage.ecore#/">
+    <genClasses ecoreClass="platform:/plugin/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/plugin/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/containedPartition"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/stringRep"/>
+      <genOperations ecoreOperation="platform:/plugin/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/addToStringRep">
+        <genParameters ecoreParameter="platform:/plugin/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/addToStringRep/card"/>
+      </genOperations>
+      <genOperations ecoreOperation="platform:/plugin/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/determineNextSize"/>
+      <genOperations ecoreOperation="platform:/plugin/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/grow"/>
+      <genOperations ecoreOperation="platform:/plugin/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/toString"/>
+      <genOperations ecoreOperation="platform:/plugin/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/initializeBox"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/plugin/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Partition">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/plugin/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Partition/card"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference platform:/plugin/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Partition/box"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Partition/previous"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/plugin/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Partition/next"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Partition/index"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Partition/partitionSize"/>
+      <genOperations ecoreOperation="platform:/plugin/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Partition/check">
+        <genParameters ecoreParameter="platform:/plugin/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Partition/check/card"/>
+        <genParameters ecoreParameter="platform:/plugin/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Partition/check/guess"/>
+      </genOperations>
+      <genOperations ecoreOperation="platform:/plugin/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Partition/empty"/>
+      <genOperations ecoreOperation="platform:/plugin/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Partition/removeCard">
+        <genParameters ecoreParameter="platform:/plugin/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Partition/removeCard/card"/>
+      </genOperations>
+    </genClasses>
+    <genClasses ecoreClass="platform:/plugin/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Card">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference platform:/plugin/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Card/cardContainer"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Card/back"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Card/face"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/plugin/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Card/partitionHistory"/>
+      <genOperations ecoreOperation="platform:/plugin/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Card/invert"/>
+      <genOperations ecoreOperation="platform:/plugin/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Card/printCard"/>
+    </genClasses>
+    <genClasses ecoreClass="platform:/plugin/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//FastCard"/>
+  </genPackages>
+</genmodel:GenModel>

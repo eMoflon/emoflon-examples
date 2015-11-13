@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="ASCII"?>
+<MocaTree:Folder xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:MocaTree="platform:/plugin/MocaTree/model/MocaTree.ecore" name="myLibrary">
+  <subFolder name="english">
+    <file name="numbers1-10.dictionary">
+      <rootNode name="DICTIONARY" stopLineIndex="38">
+        <children xsi:type="MocaTree:Node" name="numbers1-10" startIndex="7" stopIndex="19" stopLineIndex="1"/>
+        <children xsi:type="MocaTree:Node" index="1" name="contact@langenscheidt.de" startIndex="29" startLineIndex="2" stopIndex="54" stopLineIndex="3"/>
+        <children xsi:type="MocaTree:Node" index="2" name="ENTRY" startLineIndex="5" stopLineIndex="7">
+          <children xsi:type="MocaTree:Node" name="null : zero" startIndex="61" startLineIndex="5" stopIndex="73" stopLineIndex="5"/>
+          <children xsi:type="MocaTree:Node" index="1" name="beginner" startIndex="76" startLineIndex="7" stopIndex="83" stopLineIndex="7"/>
+        </children>
+        <children xsi:type="MocaTree:Node" index="3" name="ENTRY" startLineIndex="8" stopLineIndex="10">
+          <children xsi:type="MocaTree:Node" name="eins : one" startIndex="87" startLineIndex="8" stopIndex="98" stopLineIndex="8"/>
+          <children xsi:type="MocaTree:Node" index="1" name="beginner" startIndex="101" startLineIndex="10" stopIndex="108" stopLineIndex="10"/>
+        </children>
+        <children xsi:type="MocaTree:Node" index="4" name="ENTRY" startLineIndex="11" stopLineIndex="13">
+          <children xsi:type="MocaTree:Node" name="zwei : two" startIndex="112" startLineIndex="11" stopIndex="123" stopLineIndex="11"/>
+          <children xsi:type="MocaTree:Node" index="1" name="beginner" startIndex="126" startLineIndex="13" stopIndex="133" stopLineIndex="13"/>
+        </children>
+        <children xsi:type="MocaTree:Node" index="5" name="ENTRY" startLineIndex="14" stopLineIndex="16">
+          <children xsi:type="MocaTree:Node" name="drei : three" startIndex="137" startLineIndex="14" stopIndex="150" stopLineIndex="14"/>
+          <children xsi:type="MocaTree:Node" index="1" name="beginner" startIndex="153" startLineIndex="16" stopIndex="160" stopLineIndex="16"/>
+        </children>
+        <children xsi:type="MocaTree:Node" index="6" name="ENTRY" startLineIndex="17" stopLineIndex="19">
+          <children xsi:type="MocaTree:Node" name="vier : four" startIndex="164" startLineIndex="17" stopIndex="176" stopLineIndex="17"/>
+          <children xsi:type="MocaTree:Node" index="1" name="beginner" startIndex="179" startLineIndex="19" stopIndex="186" stopLineIndex="19"/>
+        </children>
+        <children xsi:type="MocaTree:Node" index="7" name="ENTRY" startLineIndex="20" stopLineIndex="22">
+          <children xsi:type="MocaTree:Node" name="fuenf : five" startIndex="190" startLineIndex="20" stopIndex="203" stopLineIndex="20"/>
+          <children xsi:type="MocaTree:Node" index="1" name="beginner" startIndex="206" startLineIndex="22" stopIndex="213" stopLineIndex="22"/>
+        </children>
+        <children xsi:type="MocaTree:Node" index="8" name="ENTRY" startLineIndex="23" stopLineIndex="25">
+          <children xsi:type="MocaTree:Node" name="sechs : six" startIndex="217" startLineIndex="23" stopIndex="229" stopLineIndex="23"/>
+          <children xsi:type="MocaTree:Node" index="1" name="beginner" startIndex="232" startLineIndex="25" stopIndex="239" stopLineIndex="25"/>
+        </children>
+        <children xsi:type="MocaTree:Node" index="9" name="ENTRY" startLineIndex="26" stopLineIndex="28">
+          <children xsi:type="MocaTree:Node" name="sieben : seven" startIndex="243" startLineIndex="26" stopIndex="258" stopLineIndex="26"/>
+          <children xsi:type="MocaTree:Node" index="1" name="beginner" startIndex="261" startLineIndex="28" stopIndex="268" stopLineIndex="28"/>
+        </children>
+        <children xsi:type="MocaTree:Node" index="10" name="ENTRY" startLineIndex="29" stopLineIndex="31">
+          <children xsi:type="MocaTree:Node" name="acht : eight" startIndex="272" startLineIndex="29" stopIndex="285" stopLineIndex="29"/>
+          <children xsi:type="MocaTree:Node" index="1" name="beginner" startIndex="288" startLineIndex="31" stopIndex="295" stopLineIndex="31"/>
+        </children>
+        <children xsi:type="MocaTree:Node" index="11" name="ENTRY" startLineIndex="32" stopLineIndex="34">
+          <children xsi:type="MocaTree:Node" name="neun : nine" startIndex="299" startLineIndex="32" stopIndex="311" stopLineIndex="32"/>
+          <children xsi:type="MocaTree:Node" index="1" name="beginner" startIndex="314" startLineIndex="34" stopIndex="321" stopLineIndex="34"/>
+        </children>
+        <children xsi:type="MocaTree:Node" index="12" name="ENTRY" startLineIndex="35" stopLineIndex="37">
+          <children xsi:type="MocaTree:Node" name="zehn : ten" startIndex="325" startLineIndex="35" stopIndex="336" stopLineIndex="35"/>
+          <children xsi:type="MocaTree:Node" index="1" name="beginner" startIndex="339" startLineIndex="37" stopIndex="346" stopLineIndex="37"/>
+        </children>
+      </rootNode>
+    </file>
+  </subFolder>
+  <subFolder name="french">
+    <file name="numbers1-10.dictionary">
+      <rootNode name="DICTIONARY" stopLineIndex="38">
+        <children xsi:type="MocaTree:Node" name="numbers1-10" startIndex="7" stopIndex="19" stopLineIndex="1"/>
+        <children xsi:type="MocaTree:Node" index="1" name="contact@pons.de" startIndex="29" startLineIndex="2" stopIndex="45" stopLineIndex="3"/>
+        <children xsi:type="MocaTree:Node" index="2" name="ENTRY" startLineIndex="5" stopLineIndex="7">
+          <children xsi:type="MocaTree:Node" name="null : zero" startIndex="52" startLineIndex="5" stopIndex="64" stopLineIndex="5"/>
+          <children xsi:type="MocaTree:Node" index="1" name="beginner" startIndex="67" startLineIndex="7" stopIndex="74" stopLineIndex="7"/>
+        </children>
+        <children xsi:type="MocaTree:Node" index="3" name="ENTRY" startLineIndex="8" stopLineIndex="10">
+          <children xsi:type="MocaTree:Node" name="eins : un/une" startIndex="78" startLineIndex="8" stopIndex="92" stopLineIndex="8"/>
+          <children xsi:type="MocaTree:Node" index="1" name="beginner" startIndex="95" startLineIndex="10" stopIndex="102" stopLineIndex="10"/>
+        </children>
+        <children xsi:type="MocaTree:Node" index="4" name="ENTRY" startLineIndex="11" stopLineIndex="13">
+          <children xsi:type="MocaTree:Node" name="zwei : deux" startIndex="106" startLineIndex="11" stopIndex="118" stopLineIndex="11"/>
+          <children xsi:type="MocaTree:Node" index="1" name="beginner" startIndex="121" startLineIndex="13" stopIndex="128" stopLineIndex="13"/>
+        </children>
+        <children xsi:type="MocaTree:Node" index="5" name="ENTRY" startLineIndex="14" stopLineIndex="16">
+          <children xsi:type="MocaTree:Node" name="drei : troi" startIndex="132" startLineIndex="14" stopIndex="144" stopLineIndex="14"/>
+          <children xsi:type="MocaTree:Node" index="1" name="beginner" startIndex="147" startLineIndex="16" stopIndex="154" stopLineIndex="16"/>
+        </children>
+        <children xsi:type="MocaTree:Node" index="6" name="ENTRY" startLineIndex="17" stopLineIndex="19">
+          <children xsi:type="MocaTree:Node" name="vier : quatre" startIndex="158" startLineIndex="17" stopIndex="172" stopLineIndex="17"/>
+          <children xsi:type="MocaTree:Node" index="1" name="beginner" startIndex="175" startLineIndex="19" stopIndex="182" stopLineIndex="19"/>
+        </children>
+        <children xsi:type="MocaTree:Node" index="7" name="ENTRY" startLineIndex="20" stopLineIndex="22">
+          <children xsi:type="MocaTree:Node" name="fuenf : cinq" startIndex="186" startLineIndex="20" stopIndex="199" stopLineIndex="20"/>
+          <children xsi:type="MocaTree:Node" index="1" name="beginner" startIndex="202" startLineIndex="22" stopIndex="209" stopLineIndex="22"/>
+        </children>
+        <children xsi:type="MocaTree:Node" index="8" name="ENTRY" startLineIndex="23" stopLineIndex="25">
+          <children xsi:type="MocaTree:Node" name="sechs : sechs" startIndex="213" startLineIndex="23" stopIndex="227" stopLineIndex="23"/>
+          <children xsi:type="MocaTree:Node" index="1" name="beginner" startIndex="230" startLineIndex="25" stopIndex="237" stopLineIndex="25"/>
+        </children>
+        <children xsi:type="MocaTree:Node" index="9" name="ENTRY" startLineIndex="26" stopLineIndex="28">
+          <children xsi:type="MocaTree:Node" name="sieben : sieben" startIndex="241" startLineIndex="26" stopIndex="257" stopLineIndex="26"/>
+          <children xsi:type="MocaTree:Node" index="1" name="beginner" startIndex="260" startLineIndex="28" stopIndex="267" stopLineIndex="28"/>
+        </children>
+        <children xsi:type="MocaTree:Node" index="10" name="ENTRY" startLineIndex="29" stopLineIndex="31">
+          <children xsi:type="MocaTree:Node" name="acht : huit" startIndex="271" startLineIndex="29" stopIndex="283" stopLineIndex="29"/>
+          <children xsi:type="MocaTree:Node" index="1" name="beginner" startIndex="286" startLineIndex="31" stopIndex="293" stopLineIndex="31"/>
+        </children>
+        <children xsi:type="MocaTree:Node" index="11" name="ENTRY" startLineIndex="32" stopLineIndex="34">
+          <children xsi:type="MocaTree:Node" name="neun : neuf" startIndex="297" startLineIndex="32" stopIndex="309" stopLineIndex="32"/>
+          <children xsi:type="MocaTree:Node" index="1" name="beginner" startIndex="312" startLineIndex="34" stopIndex="319" stopLineIndex="34"/>
+        </children>
+        <children xsi:type="MocaTree:Node" index="12" name="ENTRY" startLineIndex="35" stopLineIndex="37">
+          <children xsi:type="MocaTree:Node" name="zehn : dix" startIndex="323" startLineIndex="35" stopIndex="334" stopLineIndex="35"/>
+          <children xsi:type="MocaTree:Node" index="1" name="beginner" startIndex="337" startLineIndex="37" stopIndex="344" stopLineIndex="37"/>
+        </children>
+      </rootNode>
+    </file>
+    <file name="numbers11-20.dictionary">
+      <rootNode name="DICTIONARY" stopLineIndex="35">
+        <children xsi:type="MocaTree:Node" name="numbers11-20" startIndex="7" stopIndex="20" stopLineIndex="1"/>
+        <children xsi:type="MocaTree:Node" index="1" name="contact@pons.de" startIndex="30" startLineIndex="2" stopIndex="46" stopLineIndex="3"/>
+        <children xsi:type="MocaTree:Node" index="2" name="ENTRY" startLineIndex="5" stopLineIndex="7">
+          <children xsi:type="MocaTree:Node" name="elf : onze" startIndex="53" startLineIndex="5" stopIndex="64" stopLineIndex="5"/>
+          <children xsi:type="MocaTree:Node" index="1" name="advanced" startIndex="67" startLineIndex="7" stopIndex="74" stopLineIndex="7"/>
+        </children>
+        <children xsi:type="MocaTree:Node" index="3" name="ENTRY" startLineIndex="8" stopLineIndex="10">
+          <children xsi:type="MocaTree:Node" name="zwoelf : douze" startIndex="78" startLineIndex="8" stopIndex="93" stopLineIndex="8"/>
+          <children xsi:type="MocaTree:Node" index="1" name="advanced" startIndex="96" startLineIndex="10" stopIndex="103" stopLineIndex="10"/>
+        </children>
+        <children xsi:type="MocaTree:Node" index="4" name="ENTRY" startLineIndex="11" stopLineIndex="13">
+          <children xsi:type="MocaTree:Node" name="dreizehn : treize" startIndex="107" startLineIndex="11" stopIndex="125" stopLineIndex="11"/>
+          <children xsi:type="MocaTree:Node" index="1" name="advanced" startIndex="128" startLineIndex="13" stopIndex="135" stopLineIndex="13"/>
+        </children>
+        <children xsi:type="MocaTree:Node" index="5" name="ENTRY" startLineIndex="14" stopLineIndex="16">
+          <children xsi:type="MocaTree:Node" name="vierzehn : quatorze" startIndex="139" startLineIndex="14" stopIndex="159" stopLineIndex="14"/>
+          <children xsi:type="MocaTree:Node" index="1" name="advanced" startIndex="162" startLineIndex="16" stopIndex="169" stopLineIndex="16"/>
+        </children>
+        <children xsi:type="MocaTree:Node" index="6" name="ENTRY" startLineIndex="17" stopLineIndex="19">
+          <children xsi:type="MocaTree:Node" name="fuenfzehn : quinze" startIndex="173" startLineIndex="17" stopIndex="192" stopLineIndex="17"/>
+          <children xsi:type="MocaTree:Node" index="1" name="advanced" startIndex="195" startLineIndex="19" stopIndex="202" stopLineIndex="19"/>
+        </children>
+        <children xsi:type="MocaTree:Node" index="7" name="ENTRY" startLineIndex="20" stopLineIndex="22">
+          <children xsi:type="MocaTree:Node" name="sechszehn : seize" startIndex="206" startLineIndex="20" stopIndex="224" stopLineIndex="20"/>
+          <children xsi:type="MocaTree:Node" index="1" name="master" startIndex="227" startLineIndex="22" stopIndex="232" stopLineIndex="22"/>
+        </children>
+        <children xsi:type="MocaTree:Node" index="8" name="ENTRY" startLineIndex="23" stopLineIndex="25">
+          <children xsi:type="MocaTree:Node" name="siebzehn : dix-sept" startIndex="236" startLineIndex="23" stopIndex="256" stopLineIndex="23"/>
+          <children xsi:type="MocaTree:Node" index="1" name="master" startIndex="259" startLineIndex="25" stopIndex="264" stopLineIndex="25"/>
+        </children>
+        <children xsi:type="MocaTree:Node" index="9" name="ENTRY" startLineIndex="26" stopLineIndex="28">
+          <children xsi:type="MocaTree:Node" name="achtzehn : dix-huit" startIndex="268" startLineIndex="26" stopIndex="288" stopLineIndex="26"/>
+          <children xsi:type="MocaTree:Node" index="1" name="master" startIndex="291" startLineIndex="28" stopIndex="296" stopLineIndex="28"/>
+        </children>
+        <children xsi:type="MocaTree:Node" index="10" name="ENTRY" startLineIndex="29" stopLineIndex="31">
+          <children xsi:type="MocaTree:Node" name="neunzehn : dix-neuf" startIndex="300" startLineIndex="29" stopIndex="320" stopLineIndex="29"/>
+          <children xsi:type="MocaTree:Node" index="1" name="master" startIndex="323" startLineIndex="31" stopIndex="328" stopLineIndex="31"/>
+        </children>
+        <children xsi:type="MocaTree:Node" index="11" name="ENTRY" startLineIndex="32" stopLineIndex="34">
+          <children xsi:type="MocaTree:Node" name="zwanzig : vingt" startIndex="332" startLineIndex="32" stopIndex="348" stopLineIndex="32"/>
+          <children xsi:type="MocaTree:Node" index="1" name="master" startIndex="351" startLineIndex="34" stopIndex="356" stopLineIndex="34"/>
+        </children>
+      </rootNode>
+    </file>
+    <file name="unknown.dictionary">
+      <rootNode name="DICTIONARY" stopLineIndex="6">
+        <children xsi:type="MocaTree:Node" name="unknown" startIndex="7" stopIndex="15" stopLineIndex="1"/>
+        <children xsi:type="MocaTree:Node" index="1" name="ENTRY" startLineIndex="3" stopLineIndex="5">
+          <children xsi:type="MocaTree:Node" name="unknown : unbekannt" startIndex="22" startLineIndex="3" stopIndex="42" stopLineIndex="3"/>
+          <children xsi:type="MocaTree:Node" index="1" name="beginner" startIndex="45" startLineIndex="5" stopIndex="52" stopLineIndex="5"/>
+        </children>
+      </rootNode>
+    </file>
+  </subFolder>
+</MocaTree:Folder>

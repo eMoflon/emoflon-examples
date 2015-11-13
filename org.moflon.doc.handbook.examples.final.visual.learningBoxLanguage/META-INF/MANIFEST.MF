@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: LearningBoxLanguage;singleton:=true
+Export-Package: LearningBoxLanguage.impl,
+ LearningBoxLanguage.util,
+ LearningBoxLanguage
+Bundle-Name: LearningBoxLanguage
+Bundle-Version: 1.0
+Require-Bundle: org.eclipse.emf.ecore,
+ org.moflon.core.utilities,
+ org.eclipse.emf.ecore.xmi
+Bundle-ManifestVersion: 2
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Vendor: TU Darmstadt
