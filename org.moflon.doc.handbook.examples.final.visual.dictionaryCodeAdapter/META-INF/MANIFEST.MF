@@ -18,7 +18,6 @@ Require-Bundle: MocaTree,
  org.eclipse.core.runtime,
  org.moflon.tgg.language,
  org.moflon.tgg.runtime,
- org.moflon.tgg.debug.language,
  org.moflon.core.moca.processing;bundle-version="2.0.0"
 Bundle-ManifestVersion: 2
 Bundle-ActivationPolicy: lazy

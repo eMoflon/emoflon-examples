@@ -1,22 +1,19 @@
 package org.moflon.tie;
 
+import java.io.File;
 import java.io.IOException;
 
 import org.apache.log4j.BasicConfigurator;
-import org.moflon.core.utilities.eMoflonEMFUtil;
-import org.moflon.ide.debug.DebugSynchronizationHelper;
-import org.moflon.moca.MocaMain;
-
-import MocaTree.Folder;
-
-import java.io.File;
-
 import org.eclipse.emf.ecore.EObject;
+import org.moflon.core.utilities.eMoflonEMFUtil;
+import org.moflon.moca.MocaMain;
+import org.moflon.tgg.algorithm.synchronization.SynchronizationHelper;
 
 import DictionaryCodeAdapter.DictionaryCodeAdapterPackage;
+import MocaTree.Folder;
 
 
-public class DictionaryCodeAdapterTrafo extends DebugSynchronizationHelper{
+public class DictionaryCodeAdapterTrafo extends SynchronizationHelper{
 
    public DictionaryCodeAdapterTrafo()
    {

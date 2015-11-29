@@ -19,8 +19,7 @@ Require-Bundle: LearningBoxLanguage,
  MocaTree,
  org.eclipse.core.runtime,
  org.moflon.tgg.language,
- org.moflon.tgg.runtime,
- org.moflon.tgg.debug.language
+ org.moflon.tgg.runtime
 Bundle-ManifestVersion: 2
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
