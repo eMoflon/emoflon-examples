@@ -1,151 +1,487 @@
 <?xml version="1.0" encoding="ASCII"?>
-<protocol:TranslationProtocol xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:protocol="http://www.moflon.org.TGGLanguage.algorithm.protocol">
-  <translationstep xsi:type="protocol:StartTranslation" node="DictionaryLanguage.impl.EntryImpl@7d741f2d (content: One : Eins, level: master)">
-    <entryNode href="bwd.src.xmi#//@entry.0"/>
-  </translationstep>
-  <translationstep xsi:type="protocol:CandidateProtocol">
-    <candidates xsi:type="protocol:AppropriateCandidate" rule="CardToEntryRule" isAppropriateName="isAppropriate_BWD_Entry_0"/>
-  </translationstep>
-  <translationstep xsi:type="protocol:TranslateContextElement" forRule="CardToEntryRule">
-    <contextElement href="bwd.src.xmi#/"/>
-  </translationstep>
-  <translationstep xsi:type="protocol:TranslationProtocol" parentProtocol="/">
-    <translationstep xsi:type="protocol:StartTranslation" node="DictionaryLanguage.impl.DictionaryImpl@961f272 (title: English Numbers)">
-      <entryNode href="bwd.src.xmi#/"/>
-    </translationstep>
-    <translationstep xsi:type="protocol:CandidateProtocol">
-      <candidates xsi:type="protocol:AppropriateCandidate" rule="BoxToDictionaryRule" isAppropriateName="isAppropriate_BWD_Dictionary_0"/>
-    </translationstep>
-    <translationstep xsi:type="protocol:PerformOperation" name="BoxToDictionaryRule : isApplicable_BWD">
-      <entryNode href="bwd.src.xmi#/"/>
-    </translationstep>
-    <translationstep xsi:type="protocol:PerformOperationSuccessful" name="BoxToDictionaryRule : perform_BWD">
-      <translatedelements href="bwd.src.xmi#/"/>
-      <createdElements href="bwd.trg.xmi#//@containedPartition.0"/>
-      <createdElements href="bwd.trg.xmi#/"/>
-      <createdElements href="bwd.trg.xmi#//@containedPartition.2"/>
-      <createdElements href="bwd.trg.xmi#//@containedPartition.1"/>
-      <createdElements href="bwd.corr.xmi#//@correspondences.0"/>
-      <createdEdges name="next">
-        <source href="bwd.trg.xmi#//@containedPartition.0"/>
-        <target href="bwd.trg.xmi#//@containedPartition.1"/>
-      </createdEdges>
-      <createdEdges name="containedPartition">
-        <source href="bwd.trg.xmi#/"/>
-        <target href="bwd.trg.xmi#//@containedPartition.0"/>
-      </createdEdges>
-      <createdEdges name="previous">
-        <source href="bwd.trg.xmi#//@containedPartition.1"/>
-        <target href="bwd.trg.xmi#//@containedPartition.2"/>
-      </createdEdges>
-      <createdEdges name="containedPartition">
-        <source href="bwd.trg.xmi#/"/>
-        <target href="bwd.trg.xmi#//@containedPartition.1"/>
-      </createdEdges>
-      <createdEdges name="containedPartition">
-        <source href="bwd.trg.xmi#/"/>
-        <target href="bwd.trg.xmi#//@containedPartition.2"/>
-      </createdEdges>
-      <createdEdges name="source">
-        <source href="bwd.corr.xmi#//@correspondences.0"/>
-        <target href="bwd.trg.xmi#/"/>
-      </createdEdges>
-      <createdEdges name="previous">
-        <source href="bwd.trg.xmi#//@containedPartition.0"/>
-        <target href="bwd.trg.xmi#//@containedPartition.2"/>
-      </createdEdges>
-      <createdEdges name="target">
-        <source href="bwd.corr.xmi#//@correspondences.0"/>
-        <target href="bwd.src.xmi#/"/>
-      </createdEdges>
-      <createdEdges name="next">
-        <source href="bwd.trg.xmi#//@containedPartition.2"/>
-        <target href="bwd.trg.xmi#//@containedPartition.0"/>
-      </createdEdges>
-    </translationstep>
-  </translationstep>
-  <translationstep xsi:type="protocol:PerformOperation" name="CardToEntryRule : isApplicable_BWD">
-    <entryNode href="bwd.src.xmi#//@entry.0"/>
-  </translationstep>
-  <translationstep xsi:type="protocol:PerformOperationSuccessful" name="CardToEntryRule : perform_BWD">
-    <translatedelements href="bwd.src.xmi#//@entry.0"/>
-    <createdElements href="bwd.trg.xmi#//@containedPartition.2/@card.0"/>
+<org.moflon.tgg.runtime:PrecedenceStructure xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.moflon.tgg.runtime="platform:/plugin/org.moflon.tgg.runtime/model/Runtime.ecore">
+  <tripleMatches children="//@tripleMatches.3 //@tripleMatches.1 //@tripleMatches.2 //@tripleMatches.4" ruleName="BoxToDictionaryRule" number="6">
+    <sourceElements href="bwd.trg.xmi#//@containedPartition.2"/>
+    <sourceElements href="#//@tripleMatches.0/@containedEdges.0"/>
+    <sourceElements href="#//@tripleMatches.0/@containedEdges.1"/>
+    <sourceElements href="#//@tripleMatches.0/@containedEdges.3"/>
+    <sourceElements href="#//@tripleMatches.0/@containedEdges.5"/>
+    <sourceElements href="#//@tripleMatches.0/@containedEdges.6"/>
+    <sourceElements href="bwd.trg.xmi#//@containedPartition.0"/>
+    <sourceElements href="#//@tripleMatches.0/@containedEdges.7"/>
+    <sourceElements href="#//@tripleMatches.0/@containedEdges.8"/>
+    <sourceElements href="#//@tripleMatches.0/@containedEdges.9"/>
+    <sourceElements href="bwd.trg.xmi#/"/>
+    <sourceElements href="bwd.trg.xmi#//@containedPartition.1"/>
+    <sourceElements href="#//@tripleMatches.0/@containedEdges.10"/>
+    <sourceElements href="#//@tripleMatches.0/@containedEdges.11"/>
+    <nodeMappings nodeName="partition2">
+      <node href="bwd.trg.xmi#//@containedPartition.2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="dictionary">
+      <node href="bwd.src.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="boxToDictionary">
+      <node href="bwd.corr.xmi#//@correspondences.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="box">
+      <node href="bwd.trg.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="partition1">
+      <node href="bwd.trg.xmi#//@containedPartition.1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="partition0">
+      <node href="bwd.trg.xmi#//@containedPartition.0"/>
+    </nodeMappings>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="containedPartition">
+      <src href="bwd.trg.xmi#/"/>
+      <trg href="bwd.trg.xmi#//@containedPartition.2"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="next">
+      <src href="bwd.trg.xmi#//@containedPartition.0"/>
+      <trg href="bwd.trg.xmi#//@containedPartition.1"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.corr.xmi#//@correspondences.0"/>
+      <trg href="bwd.trg.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="previous">
+      <src href="bwd.trg.xmi#//@containedPartition.1"/>
+      <trg href="bwd.trg.xmi#//@containedPartition.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.corr.xmi#//@correspondences.0"/>
+      <trg href="bwd.src.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="containedPartition">
+      <src href="bwd.trg.xmi#/"/>
+      <trg href="bwd.trg.xmi#//@containedPartition.1"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="box">
+      <src href="bwd.trg.xmi#//@containedPartition.1"/>
+      <trg href="bwd.trg.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="previous">
+      <src href="bwd.trg.xmi#//@containedPartition.2"/>
+      <trg href="bwd.trg.xmi#//@containedPartition.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="containedPartition">
+      <src href="bwd.trg.xmi#/"/>
+      <trg href="bwd.trg.xmi#//@containedPartition.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="box">
+      <src href="bwd.trg.xmi#//@containedPartition.2"/>
+      <trg href="bwd.trg.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="next">
+      <src href="bwd.trg.xmi#//@containedPartition.1"/>
+      <trg href="bwd.trg.xmi#//@containedPartition.2"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="box">
+      <src href="bwd.trg.xmi#//@containedPartition.0"/>
+      <trg href="bwd.trg.xmi#/"/>
+    </containedEdges>
+    <targetElements href="bwd.src.xmi#/"/>
+    <correspondenceElements href="bwd.corr.xmi#//@correspondences.0"/>
+    <correspondenceElements href="#//@tripleMatches.0/@containedEdges.2"/>
+    <correspondenceElements href="#//@tripleMatches.0/@containedEdges.4"/>
+    <createdElements href="bwd.trg.xmi#//@containedPartition.2"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.0"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.1"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.2"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.3"/>
+    <createdElements href="bwd.src.xmi#/"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.4"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.5"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.6"/>
+    <createdElements href="bwd.trg.xmi#//@containedPartition.0"/>
+    <createdElements href="bwd.corr.xmi#//@correspondences.0"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.7"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.8"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.9"/>
+    <createdElements href="bwd.trg.xmi#/"/>
+    <createdElements href="bwd.trg.xmi#//@containedPartition.1"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.10"/>
+    <createdElements href="#//@tripleMatches.0/@containedEdges.11"/>
+  </tripleMatches>
+  <tripleMatches ruleName="CardToEntryRule" number="7">
+    <sourceElements href="#//@tripleMatches.1/@containedEdges.5"/>
+    <sourceElements href="bwd.trg.xmi#//@containedPartition.1/@card.0"/>
+    <sourceElements href="bwd.trg.xmi#//@containedPartition.1"/>
+    <sourceElements href="bwd.trg.xmi#/"/>
+    <sourceElements href="#//@tripleMatches.1/@containedEdges.2"/>
+    <sourceElements href="#//@tripleMatches.1/@containedEdges.3"/>
+    <sourceElements href="#//@tripleMatches.1/@containedEdges.7"/>
+    <contextElements href="bwd.corr.xmi#//@correspondences.0"/>
+    <contextElements href="#//@tripleMatches.1/@containedEdges.0"/>
+    <contextElements href="bwd.src.xmi#/"/>
+    <contextElements href="bwd.trg.xmi#//@containedPartition.1"/>
+    <contextElements href="bwd.trg.xmi#/"/>
+    <contextElements href="#//@tripleMatches.1/@containedEdges.1"/>
+    <contextElements href="#//@tripleMatches.1/@containedEdges.2"/>
+    <contextElements href="#//@tripleMatches.1/@containedEdges.3"/>
+    <nodeMappings nodeName="entry">
+      <node href="bwd.src.xmi#//@entry.2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="boxToDictionary">
+      <node href="bwd.corr.xmi#//@correspondences.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="dictionary">
+      <node href="bwd.src.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="box">
+      <node href="bwd.trg.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="card">
+      <node href="bwd.trg.xmi#//@containedPartition.1/@card.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="cardToEntry">
+      <node href="bwd.corr.xmi#//@correspondences.1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="partition0">
+      <node href="bwd.trg.xmi#//@containedPartition.1"/>
+    </nodeMappings>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.corr.xmi#//@correspondences.0"/>
+      <trg href="bwd.trg.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.corr.xmi#//@correspondences.0"/>
+      <trg href="bwd.src.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="containedPartition">
+      <src href="bwd.trg.xmi#/"/>
+      <trg href="bwd.trg.xmi#//@containedPartition.1"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="box">
+      <src href="bwd.trg.xmi#//@containedPartition.1"/>
+      <trg href="bwd.trg.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="entry">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@entry.2"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="card">
+      <src href="bwd.trg.xmi#//@containedPartition.1"/>
+      <trg href="bwd.trg.xmi#//@containedPartition.1/@card.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.corr.xmi#//@correspondences.1"/>
+      <trg href="bwd.src.xmi#//@entry.2"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cardContainer">
+      <src href="bwd.trg.xmi#//@containedPartition.1/@card.0"/>
+      <trg href="bwd.trg.xmi#//@containedPartition.1"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.corr.xmi#//@correspondences.1"/>
+      <trg href="bwd.trg.xmi#//@containedPartition.1/@card.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="entry">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@entry.2"/>
+    </containedEdges>
+    <targetElements href="bwd.src.xmi#//@entry.2"/>
+    <targetElements href="#//@tripleMatches.1/@containedEdges.9"/>
+    <targetElements href="bwd.src.xmi#/"/>
+    <correspondenceElements href="bwd.corr.xmi#//@correspondences.0"/>
+    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.0"/>
+    <correspondenceElements href="bwd.corr.xmi#//@correspondences.1"/>
+    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.6"/>
+    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.1"/>
+    <correspondenceElements href="#//@tripleMatches.1/@containedEdges.8"/>
+    <createdElements href="bwd.src.xmi#//@entry.2"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.4"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.5"/>
     <createdElements href="bwd.corr.xmi#//@correspondences.1"/>
-    <createdEdges name="card">
-      <source href="bwd.trg.xmi#//@containedPartition.2"/>
-      <target href="bwd.trg.xmi#//@containedPartition.2/@card.0"/>
-    </createdEdges>
-    <createdEdges name="source">
-      <source href="bwd.corr.xmi#//@correspondences.1"/>
-      <target href="bwd.trg.xmi#//@containedPartition.2/@card.0"/>
-    </createdEdges>
-    <createdEdges name="target">
-      <source href="bwd.corr.xmi#//@correspondences.1"/>
-      <target href="bwd.src.xmi#//@entry.0"/>
-    </createdEdges>
-    <translatedEdges name="entry">
-      <source href="bwd.src.xmi#/"/>
-      <target href="bwd.src.xmi#//@entry.0"/>
-    </translatedEdges>
-  </translationstep>
-  <translationstep xsi:type="protocol:StartTranslation" node="DictionaryLanguage.impl.EntryImpl@52ab03b3 (content: Two : Zwei, level: advanced)">
-    <entryNode href="bwd.src.xmi#//@entry.1"/>
-  </translationstep>
-  <translationstep xsi:type="protocol:CandidateProtocol">
-    <candidates xsi:type="protocol:AppropriateCandidate" rule="CardToEntryRule" isAppropriateName="isAppropriate_BWD_Entry_0"/>
-  </translationstep>
-  <translationstep xsi:type="protocol:PerformOperation" name="CardToEntryRule : isApplicable_BWD">
-    <entryNode href="bwd.src.xmi#//@entry.1"/>
-  </translationstep>
-  <translationstep xsi:type="protocol:PerformOperationSuccessful" name="CardToEntryRule : perform_BWD">
-    <translatedelements href="bwd.src.xmi#//@entry.1"/>
-    <createdElements href="bwd.trg.xmi#//@containedPartition.0/@card.0"/>
-    <createdElements href="bwd.corr.xmi#//@correspondences.2"/>
-    <createdEdges name="card">
-      <source href="bwd.trg.xmi#//@containedPartition.0"/>
-      <target href="bwd.trg.xmi#//@containedPartition.0/@card.0"/>
-    </createdEdges>
-    <createdEdges name="source">
-      <source href="bwd.corr.xmi#//@correspondences.2"/>
-      <target href="bwd.trg.xmi#//@containedPartition.0/@card.0"/>
-    </createdEdges>
-    <createdEdges name="target">
-      <source href="bwd.corr.xmi#//@correspondences.2"/>
-      <target href="bwd.src.xmi#//@entry.1"/>
-    </createdEdges>
-    <translatedEdges name="entry">
-      <source href="bwd.src.xmi#/"/>
-      <target href="bwd.src.xmi#//@entry.1"/>
-    </translatedEdges>
-  </translationstep>
-  <translationstep xsi:type="protocol:StartTranslation" node="DictionaryLanguage.impl.EntryImpl@5980072b (content: Three : Drei, level: beginner)">
-    <entryNode href="bwd.src.xmi#//@entry.2"/>
-  </translationstep>
-  <translationstep xsi:type="protocol:CandidateProtocol">
-    <candidates xsi:type="protocol:AppropriateCandidate" rule="CardToEntryRule" isAppropriateName="isAppropriate_BWD_Entry_0"/>
-  </translationstep>
-  <translationstep xsi:type="protocol:PerformOperation" name="CardToEntryRule : isApplicable_BWD">
-    <entryNode href="bwd.src.xmi#//@entry.2"/>
-  </translationstep>
-  <translationstep xsi:type="protocol:PerformOperationSuccessful" name="CardToEntryRule : perform_BWD">
-    <translatedelements href="bwd.src.xmi#//@entry.2"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.6"/>
     <createdElements href="bwd.trg.xmi#//@containedPartition.1/@card.0"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.7"/>
+    <createdElements href="#//@tripleMatches.1/@containedEdges.8"/>
+  </tripleMatches>
+  <tripleMatches ruleName="CardToEntryRule" number="8">
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.4"/>
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.1"/>
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.8"/>
+    <sourceElements href="bwd.trg.xmi#/"/>
+    <sourceElements href="bwd.trg.xmi#//@containedPartition.0/@card.0"/>
+    <sourceElements href="bwd.trg.xmi#//@containedPartition.0"/>
+    <sourceElements href="#//@tripleMatches.2/@containedEdges.3"/>
+    <contextElements href="bwd.corr.xmi#//@correspondences.0"/>
+    <contextElements href="#//@tripleMatches.2/@containedEdges.0"/>
+    <contextElements href="bwd.src.xmi#/"/>
+    <contextElements href="#//@tripleMatches.2/@containedEdges.1"/>
+    <contextElements href="bwd.trg.xmi#/"/>
+    <contextElements href="#//@tripleMatches.2/@containedEdges.2"/>
+    <contextElements href="bwd.trg.xmi#//@containedPartition.0"/>
+    <contextElements href="#//@tripleMatches.2/@containedEdges.3"/>
+    <nodeMappings nodeName="entry">
+      <node href="bwd.src.xmi#//@entry.3"/>
+    </nodeMappings>
+    <nodeMappings nodeName="boxToDictionary">
+      <node href="bwd.corr.xmi#//@correspondences.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="dictionary">
+      <node href="bwd.src.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="box">
+      <node href="bwd.trg.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="card">
+      <node href="bwd.trg.xmi#//@containedPartition.0/@card.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="cardToEntry">
+      <node href="bwd.corr.xmi#//@correspondences.2"/>
+    </nodeMappings>
+    <nodeMappings nodeName="partition0">
+      <node href="bwd.trg.xmi#//@containedPartition.0"/>
+    </nodeMappings>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.corr.xmi#//@correspondences.0"/>
+      <trg href="bwd.trg.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="containedPartition">
+      <src href="bwd.trg.xmi#/"/>
+      <trg href="bwd.trg.xmi#//@containedPartition.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.corr.xmi#//@correspondences.0"/>
+      <trg href="bwd.src.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="box">
+      <src href="bwd.trg.xmi#//@containedPartition.0"/>
+      <trg href="bwd.trg.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="card">
+      <src href="bwd.trg.xmi#//@containedPartition.0"/>
+      <trg href="bwd.trg.xmi#//@containedPartition.0/@card.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.corr.xmi#//@correspondences.2"/>
+      <trg href="bwd.trg.xmi#//@containedPartition.0/@card.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="entry">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@entry.3"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.corr.xmi#//@correspondences.2"/>
+      <trg href="bwd.src.xmi#//@entry.3"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cardContainer">
+      <src href="bwd.trg.xmi#//@containedPartition.0/@card.0"/>
+      <trg href="bwd.trg.xmi#//@containedPartition.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="entry">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@entry.3"/>
+    </containedEdges>
+    <targetElements href="#//@tripleMatches.2/@containedEdges.9"/>
+    <targetElements href="bwd.src.xmi#/"/>
+    <targetElements href="bwd.src.xmi#//@entry.3"/>
+    <correspondenceElements href="bwd.corr.xmi#//@correspondences.2"/>
+    <correspondenceElements href="bwd.corr.xmi#//@correspondences.0"/>
+    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.5"/>
+    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.0"/>
+    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.7"/>
+    <correspondenceElements href="#//@tripleMatches.2/@containedEdges.2"/>
+    <createdElements href="bwd.corr.xmi#//@correspondences.2"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.4"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.5"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.6"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.7"/>
+    <createdElements href="#//@tripleMatches.2/@containedEdges.8"/>
+    <createdElements href="bwd.trg.xmi#//@containedPartition.0/@card.0"/>
+    <createdElements href="bwd.src.xmi#//@entry.3"/>
+  </tripleMatches>
+  <tripleMatches ruleName="CardToEntryRule" number="9">
+    <sourceElements href="bwd.trg.xmi#//@containedPartition.2"/>
+    <sourceElements href="#//@tripleMatches.3/@containedEdges.0"/>
+    <sourceElements href="#//@tripleMatches.3/@containedEdges.5"/>
+    <sourceElements href="#//@tripleMatches.3/@containedEdges.2"/>
+    <sourceElements href="bwd.trg.xmi#/"/>
+    <sourceElements href="bwd.trg.xmi#//@containedPartition.2/@card.0"/>
+    <sourceElements href="#//@tripleMatches.3/@containedEdges.8"/>
+    <contextElements href="bwd.trg.xmi#//@containedPartition.2"/>
+    <contextElements href="#//@tripleMatches.3/@containedEdges.0"/>
+    <contextElements href="bwd.corr.xmi#//@correspondences.0"/>
+    <contextElements href="#//@tripleMatches.3/@containedEdges.1"/>
+    <contextElements href="bwd.src.xmi#/"/>
+    <contextElements href="#//@tripleMatches.3/@containedEdges.2"/>
+    <contextElements href="bwd.trg.xmi#/"/>
+    <contextElements href="#//@tripleMatches.3/@containedEdges.3"/>
+    <nodeMappings nodeName="entry">
+      <node href="bwd.src.xmi#//@entry.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="boxToDictionary">
+      <node href="bwd.corr.xmi#//@correspondences.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="dictionary">
+      <node href="bwd.src.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="box">
+      <node href="bwd.trg.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="card">
+      <node href="bwd.trg.xmi#//@containedPartition.2/@card.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="cardToEntry">
+      <node href="bwd.corr.xmi#//@correspondences.3"/>
+    </nodeMappings>
+    <nodeMappings nodeName="partition0">
+      <node href="bwd.trg.xmi#//@containedPartition.2"/>
+    </nodeMappings>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="containedPartition">
+      <src href="bwd.trg.xmi#/"/>
+      <trg href="bwd.trg.xmi#//@containedPartition.2"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.corr.xmi#//@correspondences.0"/>
+      <trg href="bwd.trg.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="box">
+      <src href="bwd.trg.xmi#//@containedPartition.2"/>
+      <trg href="bwd.trg.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.corr.xmi#//@correspondences.0"/>
+      <trg href="bwd.src.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.corr.xmi#//@correspondences.3"/>
+      <trg href="bwd.src.xmi#//@entry.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="card">
+      <src href="bwd.trg.xmi#//@containedPartition.2"/>
+      <trg href="bwd.trg.xmi#//@containedPartition.2/@card.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.corr.xmi#//@correspondences.3"/>
+      <trg href="bwd.trg.xmi#//@containedPartition.2/@card.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="entry">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@entry.0"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cardContainer">
+      <src href="bwd.trg.xmi#//@containedPartition.2/@card.0"/>
+      <trg href="bwd.trg.xmi#//@containedPartition.2"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="entry">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@entry.0"/>
+    </containedEdges>
+    <targetElements href="bwd.src.xmi#/"/>
+    <targetElements href="#//@tripleMatches.3/@containedEdges.9"/>
+    <targetElements href="bwd.src.xmi#//@entry.0"/>
+    <correspondenceElements href="bwd.corr.xmi#//@correspondences.3"/>
+    <correspondenceElements href="bwd.corr.xmi#//@correspondences.0"/>
+    <correspondenceElements href="#//@tripleMatches.3/@containedEdges.1"/>
+    <correspondenceElements href="#//@tripleMatches.3/@containedEdges.4"/>
+    <correspondenceElements href="#//@tripleMatches.3/@containedEdges.6"/>
+    <correspondenceElements href="#//@tripleMatches.3/@containedEdges.3"/>
     <createdElements href="bwd.corr.xmi#//@correspondences.3"/>
-    <createdEdges name="card">
-      <source href="bwd.trg.xmi#//@containedPartition.1"/>
-      <target href="bwd.trg.xmi#//@containedPartition.1/@card.0"/>
-    </createdEdges>
-    <createdEdges name="source">
-      <source href="bwd.corr.xmi#//@correspondences.3"/>
-      <target href="bwd.trg.xmi#//@containedPartition.1/@card.0"/>
-    </createdEdges>
-    <createdEdges name="target">
-      <source href="bwd.corr.xmi#//@correspondences.3"/>
-      <target href="bwd.src.xmi#//@entry.2"/>
-    </createdEdges>
-    <translatedEdges name="entry">
-      <source href="bwd.src.xmi#/"/>
-      <target href="bwd.src.xmi#//@entry.2"/>
-    </translatedEdges>
-  </translationstep>
-</protocol:TranslationProtocol>
+    <createdElements href="#//@tripleMatches.3/@containedEdges.4"/>
+    <createdElements href="#//@tripleMatches.3/@containedEdges.5"/>
+    <createdElements href="#//@tripleMatches.3/@containedEdges.6"/>
+    <createdElements href="#//@tripleMatches.3/@containedEdges.7"/>
+    <createdElements href="bwd.trg.xmi#//@containedPartition.2/@card.0"/>
+    <createdElements href="bwd.src.xmi#//@entry.0"/>
+    <createdElements href="#//@tripleMatches.3/@containedEdges.8"/>
+  </tripleMatches>
+  <tripleMatches ruleName="CardToEntryRule" number="10">
+    <sourceElements href="bwd.trg.xmi#//@containedPartition.2"/>
+    <sourceElements href="#//@tripleMatches.4/@containedEdges.0"/>
+    <sourceElements href="#//@tripleMatches.4/@containedEdges.5"/>
+    <sourceElements href="#//@tripleMatches.4/@containedEdges.2"/>
+    <sourceElements href="bwd.trg.xmi#//@containedPartition.2/@card.1"/>
+    <sourceElements href="bwd.trg.xmi#/"/>
+    <sourceElements href="#//@tripleMatches.4/@containedEdges.8"/>
+    <contextElements href="bwd.trg.xmi#//@containedPartition.2"/>
+    <contextElements href="#//@tripleMatches.4/@containedEdges.0"/>
+    <contextElements href="bwd.corr.xmi#//@correspondences.0"/>
+    <contextElements href="#//@tripleMatches.4/@containedEdges.1"/>
+    <contextElements href="bwd.src.xmi#/"/>
+    <contextElements href="#//@tripleMatches.4/@containedEdges.2"/>
+    <contextElements href="bwd.trg.xmi#/"/>
+    <contextElements href="#//@tripleMatches.4/@containedEdges.3"/>
+    <nodeMappings nodeName="entry">
+      <node href="bwd.src.xmi#//@entry.1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="boxToDictionary">
+      <node href="bwd.corr.xmi#//@correspondences.0"/>
+    </nodeMappings>
+    <nodeMappings nodeName="dictionary">
+      <node href="bwd.src.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="box">
+      <node href="bwd.trg.xmi#/"/>
+    </nodeMappings>
+    <nodeMappings nodeName="card">
+      <node href="bwd.trg.xmi#//@containedPartition.2/@card.1"/>
+    </nodeMappings>
+    <nodeMappings nodeName="cardToEntry">
+      <node href="bwd.corr.xmi#//@correspondences.4"/>
+    </nodeMappings>
+    <nodeMappings nodeName="partition0">
+      <node href="bwd.trg.xmi#//@containedPartition.2"/>
+    </nodeMappings>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="containedPartition">
+      <src href="bwd.trg.xmi#/"/>
+      <trg href="bwd.trg.xmi#//@containedPartition.2"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.corr.xmi#//@correspondences.0"/>
+      <trg href="bwd.trg.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="box">
+      <src href="bwd.trg.xmi#//@containedPartition.2"/>
+      <trg href="bwd.trg.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.corr.xmi#//@correspondences.0"/>
+      <trg href="bwd.src.xmi#/"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="target">
+      <src href="bwd.corr.xmi#//@correspondences.4"/>
+      <trg href="bwd.src.xmi#//@entry.1"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="cardContainer">
+      <src href="bwd.trg.xmi#//@containedPartition.2/@card.1"/>
+      <trg href="bwd.trg.xmi#//@containedPartition.2"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="source">
+      <src href="bwd.corr.xmi#//@correspondences.4"/>
+      <trg href="bwd.trg.xmi#//@containedPartition.2/@card.1"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="entry">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@entry.1"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="card">
+      <src href="bwd.trg.xmi#//@containedPartition.2"/>
+      <trg href="bwd.trg.xmi#//@containedPartition.2/@card.1"/>
+    </containedEdges>
+    <containedEdges xsi:type="org.moflon.tgg.runtime:EMoflonEdge" name="entry">
+      <src href="bwd.src.xmi#/"/>
+      <trg href="bwd.src.xmi#//@entry.1"/>
+    </containedEdges>
+    <targetElements href="bwd.src.xmi#/"/>
+    <targetElements href="#//@tripleMatches.4/@containedEdges.9"/>
+    <targetElements href="bwd.src.xmi#//@entry.1"/>
+    <correspondenceElements href="bwd.corr.xmi#//@correspondences.4"/>
+    <correspondenceElements href="bwd.corr.xmi#//@correspondences.0"/>
+    <correspondenceElements href="#//@tripleMatches.4/@containedEdges.1"/>
+    <correspondenceElements href="#//@tripleMatches.4/@containedEdges.4"/>
+    <correspondenceElements href="#//@tripleMatches.4/@containedEdges.3"/>
+    <correspondenceElements href="#//@tripleMatches.4/@containedEdges.6"/>
+    <createdElements href="bwd.corr.xmi#//@correspondences.4"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.4"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.5"/>
+    <createdElements href="bwd.trg.xmi#//@containedPartition.2/@card.1"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.6"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.7"/>
+    <createdElements href="bwd.src.xmi#//@entry.1"/>
+    <createdElements href="#//@tripleMatches.4/@containedEdges.8"/>
+  </tripleMatches>
+</org.moflon.tgg.runtime:PrecedenceStructure>
