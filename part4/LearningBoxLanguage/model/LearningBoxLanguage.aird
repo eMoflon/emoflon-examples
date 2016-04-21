@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:activities="platform:/plugin/SDMLanguage/model/SDMLanguage.ecore#//activities" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="platform:/plugin/SDMLanguage/model/SDMLanguage.ecore#//activities platform:/plugin/SDMLanguage/model/SDMLanguage.ecore#//activities http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style" xmi:id="_Sz1QEAegEeaTj6I_DhVGAA" selectedViews="_S28OcAegEeaTj6I_DhVGAA _S3C8IAegEeaTj6I_DhVGAA _S3EKQAegEeaTj6I_DhVGAA _S3H0oAegEeaTj6I_DhVGAA" version="10.0.0.201505222000">
+  <semanticResources>LearningBoxLanguage.ecore</semanticResources>
+  <semanticResources>http://www.eclipse.org/emf/2002/Ecore</semanticResources>
+  <ownedViews xmi:type="viewpoint:DRepresentationContainer" xmi:id="_S28OcAegEeaTj6I_DhVGAA">
+    <ownedRepresentations xmi:type="diagram:DSemanticDiagram" xmi:id="_Tz17kAegEeaTj6I_DhVGAA" name="LearningBoxLanguage class diagram">
+      <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_Tz17kQegEeaTj6I_DhVGAA" source="DANNOTATION_CUSTOMIZATION_KEY">
+        <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_Tz17kgegEeaTj6I_DhVGAA">
+          <computedStyleDescriptions xmi:type="style:FlatContainerStyleDescription" xmi:id="_UhRpUAegEeaTj6I_DhVGAA" arcWidth="8" arcHeight="8" tooltipExpression="service:renderTooltip" roundedCorner="true" widthComputationExpression="12" heightComputationExpression="10" backgroundStyle="Liquid">
+            <borderColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
+            <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
+            <backgroundColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xmi:type="description:UserFixedColor" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@userColorsPalettes[name='Ecore%20Palette']/@entries[name='EClass']"/>
+          </computedStyleDescriptions>
+          <computedStyleDescriptions xmi:type="style:BundledImageDescription" xmi:id="_UhnAgAegEeaTj6I_DhVGAA" labelExpression="service:render" labelAlignment="LEFT" tooltipExpression="service:renderTooltip" sizeComputationExpression="1">
+            <borderColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelFormat>bold</labelFormat>
+            <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </computedStyleDescriptions>
+          <computedStyleDescriptions xmi:type="style:EdgeStyleDescription" xmi:id="_Uh4tUAegEeaTj6I_DhVGAA" sourceArrow="FillDiamond" routingStyle="manhattan">
+            <strokeColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <beginLabelStyleDescription xmi:type="style:BeginLabelStyleDescription" xmi:id="_Uh4tUQegEeaTj6I_DhVGAA" showIcon="false" labelExpression="service:renderEOpposite">
+              <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </beginLabelStyleDescription>
+            <endLabelStyleDescription xmi:type="style:EndLabelStyleDescription" xmi:id="_Uh4tUgegEeaTj6I_DhVGAA" showIcon="false" labelExpression="service:render">
+              <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </endLabelStyleDescription>
+          </computedStyleDescriptions>
+        </data>
+      </ownedAnnotationEntries>
+      <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_Tz17lgegEeaTj6I_DhVGAA" source="GMF_DIAGRAMS">
+        <data xmi:type="notation:Diagram" xmi:id="_Tz17lwegEeaTj6I_DhVGAA" type="Sirius" element="_Tz17kAegEeaTj6I_DhVGAA" measurementUnit="Pixel">
+          <children xmi:type="notation:Node" xmi:id="_Uh-M4AegEeaTj6I_DhVGAA" type="2003" element="_UhH4UAegEeaTj6I_DhVGAA">
+            <children xmi:type="notation:Node" xmi:id="_Uh-M4wegEeaTj6I_DhVGAA" type="5007"/>
+            <children xmi:type="notation:Node" xmi:id="_Uh-M5AegEeaTj6I_DhVGAA" type="7004">
+              <children xmi:type="notation:Node" xmi:id="_UiDsegegEeaTj6I_DhVGAA" type="3010" element="_UhlLUAegEeaTj6I_DhVGAA">
+                <styles xmi:type="notation:FontStyle" xmi:id="_UiDsewegEeaTj6I_DhVGAA" fontName="Segoe UI" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_UiDsfAegEeaTj6I_DhVGAA"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_UiDsfQegEeaTj6I_DhVGAA" type="3010" element="_UhmZcAegEeaTj6I_DhVGAA">
+                <styles xmi:type="notation:FontStyle" xmi:id="_UiDsfgegEeaTj6I_DhVGAA" fontName="Segoe UI" fontHeight="8" bold="true"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_UiDsfwegEeaTj6I_DhVGAA"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_UiDsgAegEeaTj6I_DhVGAA" type="3010" element="_UhoOoAegEeaTj6I_DhVGAA">
+                <styles xmi:type="notation:FontStyle" xmi:id="_UiDsgQegEeaTj6I_DhVGAA" fontName="Segoe UI" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_UiDsggegEeaTj6I_DhVGAA"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_UiE6kAegEeaTj6I_DhVGAA" type="3010" element="_UhrR8QegEeaTj6I_DhVGAA">
+                <styles xmi:type="notation:FontStyle" xmi:id="_UiE6kQegEeaTj6I_DhVGAA" fontName="Segoe UI" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_UiE6kgegEeaTj6I_DhVGAA"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_UiE6kwegEeaTj6I_DhVGAA" type="3010" element="_Uhr5AQegEeaTj6I_DhVGAA">
+                <styles xmi:type="notation:FontStyle" xmi:id="_UiE6lAegEeaTj6I_DhVGAA" fontName="Segoe UI" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_UiE6lQegEeaTj6I_DhVGAA"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_UiE6lgegEeaTj6I_DhVGAA" type="3010" element="_UhsgEAegEeaTj6I_DhVGAA">
+                <styles xmi:type="notation:FontStyle" xmi:id="_UiE6lwegEeaTj6I_DhVGAA" fontName="Segoe UI" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_UiE6mAegEeaTj6I_DhVGAA"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_UiGIsAegEeaTj6I_DhVGAA" type="3010" element="_UhsgEgegEeaTj6I_DhVGAA">
+                <styles xmi:type="notation:FontStyle" xmi:id="_UiGIsQegEeaTj6I_DhVGAA" fontName="Segoe UI" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_UiGIsgegEeaTj6I_DhVGAA"/>
+              </children>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_Uh-M5QegEeaTj6I_DhVGAA"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_Uh-M5gegEeaTj6I_DhVGAA"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_Uh-M4QegEeaTj6I_DhVGAA" fontColor="2697711" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Uh-M4gegEeaTj6I_DhVGAA" x="256" y="504"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Uh-M5wegEeaTj6I_DhVGAA" type="2003" element="_UhS3cAegEeaTj6I_DhVGAA">
+            <children xmi:type="notation:Node" xmi:id="_Uh_bAAegEeaTj6I_DhVGAA" type="5007"/>
+            <children xmi:type="notation:Node" xmi:id="_UiCeUAegEeaTj6I_DhVGAA" type="7004">
+              <children xmi:type="notation:Node" xmi:id="_UiGvwAegEeaTj6I_DhVGAA" type="3010" element="_UhtuMAegEeaTj6I_DhVGAA">
+                <styles xmi:type="notation:FontStyle" xmi:id="_UiGvwQegEeaTj6I_DhVGAA" fontName="Segoe UI" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_UiGvwgegEeaTj6I_DhVGAA"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_UiGvwwegEeaTj6I_DhVGAA" type="3010" element="_UhuVQQegEeaTj6I_DhVGAA">
+                <styles xmi:type="notation:FontStyle" xmi:id="_UiGvxAegEeaTj6I_DhVGAA" fontName="Segoe UI" fontHeight="8" bold="true"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_UiGvxQegEeaTj6I_DhVGAA"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_UiH94AegEeaTj6I_DhVGAA" type="3010" element="_UhvjYAegEeaTj6I_DhVGAA">
+                <styles xmi:type="notation:FontStyle" xmi:id="_UiH94QegEeaTj6I_DhVGAA" fontName="Segoe UI" fontHeight="8" bold="true"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_UiH94gegEeaTj6I_DhVGAA"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_UiIk8AegEeaTj6I_DhVGAA" type="3010" element="_UhwKcAegEeaTj6I_DhVGAA">
+                <styles xmi:type="notation:FontStyle" xmi:id="_UiIk8QegEeaTj6I_DhVGAA" fontName="Segoe UI" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_UiIk8gegEeaTj6I_DhVGAA"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_UiIk8wegEeaTj6I_DhVGAA" type="3010" element="_UhwxgAegEeaTj6I_DhVGAA">
+                <styles xmi:type="notation:FontStyle" xmi:id="_UiIk9AegEeaTj6I_DhVGAA" fontName="Segoe UI" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_UiIk9QegEeaTj6I_DhVGAA"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_UiIk9gegEeaTj6I_DhVGAA" type="3010" element="_UhwxggegEeaTj6I_DhVGAA">
+                <styles xmi:type="notation:FontStyle" xmi:id="_UiIk9wegEeaTj6I_DhVGAA" fontName="Segoe UI" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_UiIk-AegEeaTj6I_DhVGAA"/>
+              </children>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_UiCeUQegEeaTj6I_DhVGAA"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_UiCeUgegEeaTj6I_DhVGAA"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_Uh-M6AegEeaTj6I_DhVGAA" fontColor="2697711" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Uh-M6QegEeaTj6I_DhVGAA" x="216" y="252"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_UiDFYAegEeaTj6I_DhVGAA" type="2003" element="_UhXv8AegEeaTj6I_DhVGAA">
+            <children xmi:type="notation:Node" xmi:id="_UiDFYwegEeaTj6I_DhVGAA" type="5007"/>
+            <children xmi:type="notation:Node" xmi:id="_UiDscAegEeaTj6I_DhVGAA" type="7004">
+              <children xmi:type="notation:Node" xmi:id="_UiJMAAegEeaTj6I_DhVGAA" type="3010" element="_UhymsAegEeaTj6I_DhVGAA">
+                <styles xmi:type="notation:FontStyle" xmi:id="_UiJMAQegEeaTj6I_DhVGAA" fontName="Segoe UI" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_UiJMAgegEeaTj6I_DhVGAA"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_UiJMAwegEeaTj6I_DhVGAA" type="3010" element="_UhzNwAegEeaTj6I_DhVGAA">
+                <styles xmi:type="notation:FontStyle" xmi:id="_UiJMBAegEeaTj6I_DhVGAA" fontName="Segoe UI" fontHeight="8" bold="true"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_UiJMBQegEeaTj6I_DhVGAA"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_UiJMBgegEeaTj6I_DhVGAA" type="3010" element="_UhzNwgegEeaTj6I_DhVGAA">
+                <styles xmi:type="notation:FontStyle" xmi:id="_UiJMBwegEeaTj6I_DhVGAA" fontName="Segoe UI" fontHeight="8" bold="true"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_UiJMCAegEeaTj6I_DhVGAA"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_UiJzEAegEeaTj6I_DhVGAA" type="3010" element="_Uhz00QegEeaTj6I_DhVGAA">
+                <styles xmi:type="notation:FontStyle" xmi:id="_UiJzEQegEeaTj6I_DhVGAA" fontName="Segoe UI" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_UiJzEgegEeaTj6I_DhVGAA"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_UiJzEwegEeaTj6I_DhVGAA" type="3010" element="_Uh0b4QegEeaTj6I_DhVGAA">
+                <styles xmi:type="notation:FontStyle" xmi:id="_UiJzFAegEeaTj6I_DhVGAA" fontName="Segoe UI" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_UiJzFQegEeaTj6I_DhVGAA"/>
+              </children>
+              <styles xmi:type="notation:SortingStyle" xmi:id="_UiDscQegEeaTj6I_DhVGAA"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_UiDscgegEeaTj6I_DhVGAA"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_UiDFYQegEeaTj6I_DhVGAA" fontColor="2697711" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UiDFYgegEeaTj6I_DhVGAA" x="444" y="60"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_UiDscwegEeaTj6I_DhVGAA" type="2003" element="_UhazQAegEeaTj6I_DhVGAA">
+            <children xmi:type="notation:Node" xmi:id="_UiDsdgegEeaTj6I_DhVGAA" type="5007"/>
+            <children xmi:type="notation:Node" xmi:id="_UiDsdwegEeaTj6I_DhVGAA" type="7004">
+              <styles xmi:type="notation:SortingStyle" xmi:id="_UiDseAegEeaTj6I_DhVGAA"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_UiDseQegEeaTj6I_DhVGAA"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_UiDsdAegEeaTj6I_DhVGAA" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UiDsdQegEeaTj6I_DhVGAA" x="660" y="288"/>
+          </children>
+          <styles xmi:type="notation:DiagramStyle" xmi:id="_Tz17mAegEeaTj6I_DhVGAA"/>
+          <edges xmi:type="notation:Edge" xmi:id="_UiJzFgegEeaTj6I_DhVGAA" type="4001" element="_Uh1qAAegEeaTj6I_DhVGAA" source="_Uh-M5wegEeaTj6I_DhVGAA" target="_Uh-M5wegEeaTj6I_DhVGAA">
+            <children xmi:type="notation:Node" xmi:id="_UiKaIAegEeaTj6I_DhVGAA" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UiKaIQegEeaTj6I_DhVGAA" x="106" y="29"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_UiKaIgegEeaTj6I_DhVGAA" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UiKaIwegEeaTj6I_DhVGAA" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_UiKaJAegEeaTj6I_DhVGAA" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UiKaJQegEeaTj6I_DhVGAA" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_UiJzFwegEeaTj6I_DhVGAA" routing="Rectilinear"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_UiJzGAegEeaTj6I_DhVGAA" fontColor="7490599" fontName="Segoe UI" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_UiJzGQegEeaTj6I_DhVGAA" points="[124, 31, 124, 31]$[225, 31, 225, 31]$[225, 106, 225, 106]$[63, 106, 63, 106]$[63, 63, 63, 63]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_UiLBMAegEeaTj6I_DhVGAA" id="(0.5,0.5)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_UiLBMQegEeaTj6I_DhVGAA" id="(0.5,0.5)"/>
+          </edges>
+          <edges xmi:type="notation:Edge" xmi:id="_UiLBMgegEeaTj6I_DhVGAA" type="4001" element="_Uh2REwegEeaTj6I_DhVGAA" source="_Uh-M5wegEeaTj6I_DhVGAA" target="_Uh-M5wegEeaTj6I_DhVGAA">
+            <children xmi:type="notation:Node" xmi:id="_UiLBNgegEeaTj6I_DhVGAA" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UiLBNwegEeaTj6I_DhVGAA" x="3" y="78"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_UiLBOAegEeaTj6I_DhVGAA" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UiLBOQegEeaTj6I_DhVGAA" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_UiLBOgegEeaTj6I_DhVGAA" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UiLBOwegEeaTj6I_DhVGAA" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_UiLBMwegEeaTj6I_DhVGAA" routing="Rectilinear"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_UiLBNAegEeaTj6I_DhVGAA" fontColor="7490599" fontName="Segoe UI" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_UiLBNQegEeaTj6I_DhVGAA" points="[-30, 63, -30, 63]$[-30, 70, -30, 70]$[-171, 70, -171, 70]$[-171, 1, -171, 1]$[-123, 1, -123, 1]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_UiLoQAegEeaTj6I_DhVGAA" id="(0.5,0.5)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_UiLoQQegEeaTj6I_DhVGAA" id="(0.5,0.5)"/>
+          </edges>
+          <edges xmi:type="notation:Edge" xmi:id="_UiLoQgegEeaTj6I_DhVGAA" type="4001" element="_Uh24IwegEeaTj6I_DhVGAA" source="_UiDscwegEeaTj6I_DhVGAA" target="_UiDFYAegEeaTj6I_DhVGAA">
+            <children xmi:type="notation:Node" xmi:id="_UiLoRgegEeaTj6I_DhVGAA" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UiLoRwegEeaTj6I_DhVGAA" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_UiMPUAegEeaTj6I_DhVGAA" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UiMPUQegEeaTj6I_DhVGAA" y="10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_UiMPUgegEeaTj6I_DhVGAA" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UiMPUwegEeaTj6I_DhVGAA" y="10"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_UiLoQwegEeaTj6I_DhVGAA" routing="Tree"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_UiLoRAegEeaTj6I_DhVGAA" fontName="Segoe UI" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_UiLoRQegEeaTj6I_DhVGAA" points="[0, 0, 197, 119]$[0, -60, 197, 59]$[-131, -60, 66, 59]$[-131, -119, 66, 0]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_UiMPVAegEeaTj6I_DhVGAA" id="(0.5,0.0)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_UiMPVQegEeaTj6I_DhVGAA" id="(0.49685534591194974,1.0)"/>
+          </edges>
+          <edges xmi:type="notation:Edge" xmi:id="_UiMPVgegEeaTj6I_DhVGAA" type="4001" element="_Uh4GQAegEeaTj6I_DhVGAA" source="_Uh-M5wegEeaTj6I_DhVGAA" target="_UiDFYAegEeaTj6I_DhVGAA">
+            <children xmi:type="notation:Node" xmi:id="_UiMPWgegEeaTj6I_DhVGAA" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UiMPWwegEeaTj6I_DhVGAA" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_UiM2YAegEeaTj6I_DhVGAA" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UiM2YQegEeaTj6I_DhVGAA" x="-10" y="-56"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_UiM2YgegEeaTj6I_DhVGAA" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UiM2YwegEeaTj6I_DhVGAA" x="11" y="-29"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_UiMPVwegEeaTj6I_DhVGAA" routing="Rectilinear"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_UiMPWAegEeaTj6I_DhVGAA" fontName="Segoe UI" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_UiMPWQegEeaTj6I_DhVGAA" points="[43, -62, -140, 138]$[43, -92, -140, 108]$[146, -92, -37, 108]$[146, -121, -37, 79]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_UiM2ZAegEeaTj6I_DhVGAA" id="(0.5,0.5)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_UiM2ZQegEeaTj6I_DhVGAA" id="(0.5,0.5)"/>
+          </edges>
+          <edges xmi:type="notation:Edge" xmi:id="_UiM2ZgegEeaTj6I_DhVGAA" type="4001" element="_Uh4tVgegEeaTj6I_DhVGAA" source="_Uh-M4AegEeaTj6I_DhVGAA" target="_Uh-M5wegEeaTj6I_DhVGAA">
+            <children xmi:type="notation:Node" xmi:id="_UiM2agegEeaTj6I_DhVGAA" type="6001">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UiM2awegEeaTj6I_DhVGAA" y="-10"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_UiM2bAegEeaTj6I_DhVGAA" type="6002">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UiM2bQegEeaTj6I_DhVGAA" x="-1" y="32"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_UiM2bgegEeaTj6I_DhVGAA" type="6003">
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UiM2bwegEeaTj6I_DhVGAA" x="-6" y="-62"/>
+            </children>
+            <styles xmi:type="notation:ConnectorStyle" xmi:id="_UiM2ZwegEeaTj6I_DhVGAA" routing="Rectilinear"/>
+            <styles xmi:type="notation:FontStyle" xmi:id="_UiM2aAegEeaTj6I_DhVGAA" fontName="Segoe UI" fontHeight="8"/>
+            <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_UiM2aQegEeaTj6I_DhVGAA" points="[0, -60, 0, 67]$[0, -127, 0, 0]"/>
+            <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_UiNdcAegEeaTj6I_DhVGAA" id="(0.4970414201183432,0.0)"/>
+            <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_UiNdcQegEeaTj6I_DhVGAA" id="(0.4979919678714859,1.0)"/>
+          </edges>
+        </data>
+      </ownedAnnotationEntries>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_UhH4UAegEeaTj6I_DhVGAA" name="Box" tooltipText="&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.activities.impl.ActivityImpl@22fef4d4{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/grow/@activity}' must be set&#xA;ERROR : The required feature 'name' of 'SDMLanguage.activities.impl.StartNodeImpl@22007b09{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/grow/@activity/@ownedActivityNode.0}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.activities.impl.StartNodeImpl@22007b09{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/grow/@activity/@ownedActivityNode.0}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.calls.callExpressions.impl.MethodCallExpressionImpl@28566eda{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/grow/@activity/@ownedActivityNode.1/@storyPattern/@objectVariable.5/@attributeAssignment.0/@valueExpression}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.patterns.patternExpressions.impl.ObjectVariableExpressionImpl@4542f596{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/grow/@activity/@ownedActivityNode.1/@storyPattern/@objectVariable.5/@attributeAssignment.0/@valueExpression/@target}' must be set&#xA;ERROR : The required feature 'name' of 'SDMLanguage.activities.impl.StopNodeImpl@3600fd7f{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/grow/@activity/@ownedActivityNode.2}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.activities.impl.StopNodeImpl@3600fd7f{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/grow/@activity/@ownedActivityNode.2}' must be set&#xA;ERROR : The required feature 'type' of 'SDMLanguage.expressions.impl.LiteralExpressionImpl@1f5e127c{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/grow/@activity/@ownedActivityNode.2/@returnValue}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.expressions.impl.LiteralExpressionImpl@1f5e127c{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/grow/@activity/@ownedActivityNode.2/@returnValue}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.activities.impl.StatementNodeImpl@1b1eb8a{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/grow/@activity/@ownedActivityNode.3}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.calls.callExpressions.impl.MethodCallExpressionImpl@b5bf09a{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/grow/@activity/@ownedActivityNode.3/@statementExpression}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.patterns.patternExpressions.impl.ObjectVariableExpressionImpl@2dd92a66{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/grow/@activity/@ownedActivityNode.3/@statementExpression/@target}' must be set&#xA;ERROR : The required feature 'name' of 'SDMLanguage.activities.impl.StopNodeImpl@10606f95{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/grow/@activity/@ownedActivityNode.4}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.activities.impl.StopNodeImpl@10606f95{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/grow/@activity/@ownedActivityNode.4}' must be set&#xA;ERROR : The required feature 'type' of 'SDMLanguage.expressions.impl.LiteralExpressionImpl@71b1aa19{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/grow/@activity/@ownedActivityNode.4/@returnValue}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.expressions.impl.LiteralExpressionImpl@71b1aa19{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/grow/@activity/@ownedActivityNode.4/@returnValue}' must be set&#xA;ERROR : The required feature 'name' of 'SDMLanguage.activities.impl.StopNodeImpl@21ba83e3{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/grow/@activity/@ownedActivityNode.5}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.activities.impl.StopNodeImpl@21ba83e3{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/grow/@activity/@ownedActivityNode.5}' must be set&#xA;ERROR : The required feature 'type' of 'SDMLanguage.expressions.impl.LiteralExpressionImpl@238d1ffc{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/grow/@activity/@ownedActivityNode.5/@returnValue}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.expressions.impl.LiteralExpressionImpl@238d1ffc{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/grow/@activity/@ownedActivityNode.5/@returnValue}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.activities.impl.ActivityImpl@2f59d1e5{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/toString/@activity}' must be set&#xA;ERROR : The required feature 'name' of 'SDMLanguage.activities.impl.StartNodeImpl@4c2f2403{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/toString/@activity/@ownedActivityNode.0}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.activities.impl.StartNodeImpl@4c2f2403{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/toString/@activity/@ownedActivityNode.0}' must be set&#xA;ERROR : The required feature 'name' of 'SDMLanguage.activities.impl.StopNodeImpl@1d0dccff{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/toString/@activity/@ownedActivityNode.2}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.activities.impl.StopNodeImpl@1d0dccff{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/toString/@activity/@ownedActivityNode.2}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.patterns.patternExpressions.impl.AttributeValueExpressionImpl@2841bdfa{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/toString/@activity/@ownedActivityNode.2/@returnValue}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.activities.impl.StatementNodeImpl@1179c732{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/toString/@activity/@ownedActivityNode.4}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.calls.callExpressions.impl.MethodCallExpressionImpl@62608bd6{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/toString/@activity/@ownedActivityNode.4/@statementExpression}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.calls.impl.ParameterBindingImpl@49735f28{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/toString/@activity/@ownedActivityNode.4/@statementExpression/@ownedParameterBindings.0}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.patterns.patternExpressions.impl.ObjectVariableExpressionImpl@54dc2b89{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/toString/@activity/@ownedActivityNode.4/@statementExpression/@ownedParameterBindings.0/@valueExpression}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.patterns.patternExpressions.impl.ObjectVariableExpressionImpl@1fe5bc11{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/toString/@activity/@ownedActivityNode.4/@statementExpression/@target}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.activities.impl.ActivityImpl@249e6d57{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/initializeBox/@activity}' must be set&#xA;ERROR : The required feature 'name' of 'SDMLanguage.activities.impl.StartNodeImpl@2adf9cd2{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/initializeBox/@activity/@ownedActivityNode.0}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.activities.impl.StartNodeImpl@2adf9cd2{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/initializeBox/@activity/@ownedActivityNode.0}' must be set&#xA;ERROR : The required feature 'name' of 'SDMLanguage.activities.impl.StopNodeImpl@4e80e2a0{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/initializeBox/@activity/@ownedActivityNode.2}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.activities.impl.StopNodeImpl@4e80e2a0{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/initializeBox/@activity/@ownedActivityNode.2}' must be set&#xA;ERROR : The required feature 'type' of 'SDMLanguage.expressions.impl.LiteralExpressionImpl@fd44a1e{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/initializeBox/@activity/@ownedActivityNode.2/@returnValue}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.expressions.impl.LiteralExpressionImpl@fd44a1e{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/initializeBox/@activity/@ownedActivityNode.2/@returnValue}' must be set&#xA;ERROR : The required feature 'name' of 'SDMLanguage.activities.impl.StopNodeImpl@1923caf2{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/initializeBox/@activity/@ownedActivityNode.3}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.activities.impl.StopNodeImpl@1923caf2{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/initializeBox/@activity/@ownedActivityNode.3}' must be set&#xA;ERROR : The required feature 'type' of 'SDMLanguage.expressions.impl.LiteralExpressionImpl@3a61a80e{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/initializeBox/@activity/@ownedActivityNode.3/@returnValue}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.expressions.impl.LiteralExpressionImpl@3a61a80e{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Box/initializeBox/@activity/@ownedActivityNode.3/@returnValue}' must be set" outgoingEdges="_Uh4tVgegEeaTj6I_DhVGAA" width="12" height="10">
+        <target xmi:type="ecore:EClass" href="LearningBoxLanguage.ecore#//Box"/>
+        <semanticElements xmi:type="ecore:EClass" href="LearningBoxLanguage.ecore#//Box"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_UhSQYAegEeaTj6I_DhVGAA" labelColor="239,41,41" description="_UhRpUAegEeaTj6I_DhVGAA" borderColor="239,41,41" backgroundStyle="Liquid" foregroundColor="255,252,216"/>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_UhlLUAegEeaTj6I_DhVGAA" name="name : EString" tooltipText="">
+          <target xmi:type="ecore:EAttribute" href="LearningBoxLanguage.ecore#//Box/name"/>
+          <semanticElements xmi:type="ecore:EAttribute" href="LearningBoxLanguage.ecore#//Box/name"/>
+          <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_UhlyYAegEeaTj6I_DhVGAA" labelAlignment="LEFT">
+            <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_UhmZcAegEeaTj6I_DhVGAA" name="stringRep : EString" tooltipText="">
+          <target xmi:type="ecore:EAttribute" href="LearningBoxLanguage.ecore#//Box/stringRep"/>
+          <semanticElements xmi:type="ecore:EAttribute" href="LearningBoxLanguage.ecore#//Box/stringRep"/>
+          <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_UhnnkAegEeaTj6I_DhVGAA" labelAlignment="LEFT" description="_UhnAgAegEeaTj6I_DhVGAA">
+            <labelFormat>bold</labelFormat>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_UhoOoAegEeaTj6I_DhVGAA" name="addToStringRep(card Card)" tooltipText="addToStringRep(card)">
+          <target xmi:type="activities:MoflonEOperation" href="LearningBoxLanguage.ecore#//Box/addToStringRep"/>
+          <semanticElements xmi:type="activities:MoflonEOperation" href="LearningBoxLanguage.ecore#//Box/addToStringRep"/>
+          <semanticElements xmi:type="ecore:EParameter" href="LearningBoxLanguage.ecore#//Box/addToStringRep/card"/>
+          <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_UhrR8AegEeaTj6I_DhVGAA" labelAlignment="LEFT">
+            <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='Operation']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='Operation']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_UhrR8QegEeaTj6I_DhVGAA" name="determineNextSize() : EInt" tooltipText="determineNextSize() : EInt">
+          <target xmi:type="activities:MoflonEOperation" href="LearningBoxLanguage.ecore#//Box/determineNextSize"/>
+          <semanticElements xmi:type="activities:MoflonEOperation" href="LearningBoxLanguage.ecore#//Box/determineNextSize"/>
+          <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_Uhr5AAegEeaTj6I_DhVGAA" labelAlignment="LEFT">
+            <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='Operation']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='Operation']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_Uhr5AQegEeaTj6I_DhVGAA" name="grow() : EBoolean" tooltipText="grow() : EBoolean">
+          <target xmi:type="activities:MoflonEOperation" href="LearningBoxLanguage.ecore#//Box/grow"/>
+          <semanticElements xmi:type="activities:MoflonEOperation" href="LearningBoxLanguage.ecore#//Box/grow"/>
+          <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_Uhr5AgegEeaTj6I_DhVGAA" labelAlignment="LEFT">
+            <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='Operation']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='Operation']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_UhsgEAegEeaTj6I_DhVGAA" name="toString() : EString" tooltipText="toString() : EString">
+          <target xmi:type="activities:MoflonEOperation" href="LearningBoxLanguage.ecore#//Box/toString"/>
+          <semanticElements xmi:type="activities:MoflonEOperation" href="LearningBoxLanguage.ecore#//Box/toString"/>
+          <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_UhsgEQegEeaTj6I_DhVGAA" labelAlignment="LEFT">
+            <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='Operation']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='Operation']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_UhsgEgegEeaTj6I_DhVGAA" name="initializeBox() : EBoolean" tooltipText="initializeBox() : EBoolean">
+          <target xmi:type="activities:MoflonEOperation" href="LearningBoxLanguage.ecore#//Box/initializeBox"/>
+          <semanticElements xmi:type="activities:MoflonEOperation" href="LearningBoxLanguage.ecore#//Box/initializeBox"/>
+          <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_UhtHIAegEeaTj6I_DhVGAA" labelAlignment="LEFT">
+            <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='Operation']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='Operation']"/>
+        </ownedElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_UhS3cAegEeaTj6I_DhVGAA" name="Partition" tooltipText="&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.activities.impl.ActivityImpl@69275b11{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Partition/check/@activity}' must be set&#xA;ERROR : The required feature 'name' of 'SDMLanguage.activities.impl.StartNodeImpl@74d82999{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Partition/check/@activity/@ownedActivityNode.0}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.activities.impl.StartNodeImpl@74d82999{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Partition/check/@activity/@ownedActivityNode.0}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.expressions.impl.ComparisonExpressionImpl@228a58ba{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Partition/check/@activity/@ownedActivityNode.1/@storyPattern/@objectVariable.0/@constraint.0/@constraintExpression}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.calls.callExpressions.impl.ParameterExpressionImpl@6e7f8496{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Partition/check/@activity/@ownedActivityNode.1/@storyPattern/@objectVariable.0/@constraint.0/@constraintExpression/@rightExpression}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.patterns.patternExpressions.impl.AttributeValueExpressionImpl@2a9839da{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Partition/check/@activity/@ownedActivityNode.1/@storyPattern/@objectVariable.0/@constraint.0/@constraintExpression/@leftExpression}' must be set&#xA;ERROR : The required feature 'name' of 'SDMLanguage.activities.impl.StopNodeImpl@60169e0f{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Partition/check/@activity/@ownedActivityNode.4}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.activities.impl.StopNodeImpl@60169e0f{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Partition/check/@activity/@ownedActivityNode.4}' must be set&#xA;ERROR : The required feature 'type' of 'SDMLanguage.expressions.impl.LiteralExpressionImpl@7db60263{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Partition/check/@activity/@ownedActivityNode.4/@returnValue}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.expressions.impl.LiteralExpressionImpl@7db60263{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Partition/check/@activity/@ownedActivityNode.4/@returnValue}' must be set&#xA;ERROR : The required feature 'name' of 'SDMLanguage.activities.impl.StopNodeImpl@2391117e{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Partition/check/@activity/@ownedActivityNode.5}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.activities.impl.StopNodeImpl@2391117e{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Partition/check/@activity/@ownedActivityNode.5}' must be set&#xA;ERROR : The required feature 'type' of 'SDMLanguage.expressions.impl.LiteralExpressionImpl@481768ad{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Partition/check/@activity/@ownedActivityNode.5/@returnValue}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.expressions.impl.LiteralExpressionImpl@481768ad{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Partition/check/@activity/@ownedActivityNode.5/@returnValue}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.calls.callExpressions.impl.ParameterExpressionImpl@5a5e1e0d{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Partition/check/@activity/@ownedActivityNode.6/@storyPattern/@objectVariable.0/@bindingExpression}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.activities.impl.ActivityImpl@2b57c338{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Partition/empty/@activity}' must be set&#xA;ERROR : The required feature 'name' of 'SDMLanguage.activities.impl.StartNodeImpl@31e3ba75{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Partition/empty/@activity/@ownedActivityNode.0}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.activities.impl.StartNodeImpl@31e3ba75{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Partition/empty/@activity/@ownedActivityNode.0}' must be set&#xA;ERROR : The required feature 'name' of 'SDMLanguage.activities.impl.StopNodeImpl@7c0b0330{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Partition/empty/@activity/@ownedActivityNode.2}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.activities.impl.StopNodeImpl@7c0b0330{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Partition/empty/@activity/@ownedActivityNode.2}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.activities.impl.ActivityImpl@7b6e9d2f{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Partition/removeCard/@activity}' must be set&#xA;ERROR : The required feature 'name' of 'SDMLanguage.activities.impl.StartNodeImpl@f2a5e1c{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Partition/removeCard/@activity/@ownedActivityNode.0}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.activities.impl.StartNodeImpl@f2a5e1c{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Partition/removeCard/@activity/@ownedActivityNode.0}' must be set&#xA;ERROR : The required feature 'name' of 'SDMLanguage.activities.impl.StopNodeImpl@c20d03e{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Partition/removeCard/@activity/@ownedActivityNode.2}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.activities.impl.StopNodeImpl@c20d03e{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Partition/removeCard/@activity/@ownedActivityNode.2}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.calls.callExpressions.impl.ParameterExpressionImpl@25ae8782{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Partition/removeCard/@activity/@ownedActivityNode.2/@returnValue}' must be set" outgoingEdges="_Uh1qAAegEeaTj6I_DhVGAA _Uh2REwegEeaTj6I_DhVGAA _Uh4GQAegEeaTj6I_DhVGAA" incomingEdges="_Uh1qAAegEeaTj6I_DhVGAA _Uh2REwegEeaTj6I_DhVGAA _Uh4tVgegEeaTj6I_DhVGAA" width="12" height="10">
+        <target xmi:type="ecore:EClass" href="LearningBoxLanguage.ecore#//Partition"/>
+        <semanticElements xmi:type="ecore:EClass" href="LearningBoxLanguage.ecore#//Partition"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_UhXI4AegEeaTj6I_DhVGAA" labelColor="239,41,41" description="_UhRpUAegEeaTj6I_DhVGAA" borderColor="239,41,41" backgroundStyle="Liquid" foregroundColor="255,252,216"/>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_UhtuMAegEeaTj6I_DhVGAA" name="index : EInt = " tooltipText="">
+          <target xmi:type="ecore:EAttribute" href="LearningBoxLanguage.ecore#//Partition/index"/>
+          <semanticElements xmi:type="ecore:EAttribute" href="LearningBoxLanguage.ecore#//Partition/index"/>
+          <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_UhuVQAegEeaTj6I_DhVGAA" labelAlignment="LEFT">
+            <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_UhuVQQegEeaTj6I_DhVGAA" name="partitionSize : EInt = " tooltipText="">
+          <target xmi:type="ecore:EAttribute" href="LearningBoxLanguage.ecore#//Partition/partitionSize"/>
+          <semanticElements xmi:type="ecore:EAttribute" href="LearningBoxLanguage.ecore#//Partition/partitionSize"/>
+          <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_Uhu8UAegEeaTj6I_DhVGAA" labelAlignment="LEFT" description="_UhnAgAegEeaTj6I_DhVGAA">
+            <labelFormat>bold</labelFormat>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_UhvjYAegEeaTj6I_DhVGAA" name="currentSize : EInt = " tooltipText="">
+          <target xmi:type="ecore:EAttribute" href="LearningBoxLanguage.ecore#//Partition/currentSize"/>
+          <semanticElements xmi:type="ecore:EAttribute" href="LearningBoxLanguage.ecore#//Partition/currentSize"/>
+          <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_UhvjYQegEeaTj6I_DhVGAA" labelAlignment="LEFT" description="_UhnAgAegEeaTj6I_DhVGAA">
+            <labelFormat>bold</labelFormat>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_UhwKcAegEeaTj6I_DhVGAA" name="check(card Card, guess EString) : EBoolean" tooltipText="check(card, guess) : EBoolean">
+          <target xmi:type="activities:MoflonEOperation" href="LearningBoxLanguage.ecore#//Partition/check"/>
+          <semanticElements xmi:type="activities:MoflonEOperation" href="LearningBoxLanguage.ecore#//Partition/check"/>
+          <semanticElements xmi:type="ecore:EParameter" href="LearningBoxLanguage.ecore#//Partition/check/card"/>
+          <semanticElements xmi:type="ecore:EParameter" href="LearningBoxLanguage.ecore#//Partition/check/guess"/>
+          <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_UhwKcQegEeaTj6I_DhVGAA" labelAlignment="LEFT">
+            <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='Operation']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='Operation']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_UhwxgAegEeaTj6I_DhVGAA" name="empty()" tooltipText="empty()">
+          <target xmi:type="activities:MoflonEOperation" href="LearningBoxLanguage.ecore#//Partition/empty"/>
+          <semanticElements xmi:type="activities:MoflonEOperation" href="LearningBoxLanguage.ecore#//Partition/empty"/>
+          <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_UhwxgQegEeaTj6I_DhVGAA" labelAlignment="LEFT">
+            <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='Operation']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='Operation']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_UhwxggegEeaTj6I_DhVGAA" name="removeCard(card Card) : Card" tooltipText="removeCard(card) : Card">
+          <target xmi:type="activities:MoflonEOperation" href="LearningBoxLanguage.ecore#//Partition/removeCard"/>
+          <semanticElements xmi:type="activities:MoflonEOperation" href="LearningBoxLanguage.ecore#//Partition/removeCard"/>
+          <semanticElements xmi:type="ecore:EParameter" href="LearningBoxLanguage.ecore#//Partition/removeCard/card"/>
+          <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_Uhx_oAegEeaTj6I_DhVGAA" labelAlignment="LEFT">
+            <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='Operation']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='Operation']"/>
+        </ownedElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_UhXv8AegEeaTj6I_DhVGAA" name="Card" tooltipText="&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.activities.impl.ActivityImpl@3a8a370{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Card/invert/@activity}' must be set&#xA;ERROR : The required feature 'name' of 'SDMLanguage.activities.impl.StartNodeImpl@39f47d72{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Card/invert/@activity/@ownedActivityNode.0}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.activities.impl.StartNodeImpl@39f47d72{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Card/invert/@activity/@ownedActivityNode.0}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.patterns.patternExpressions.impl.AttributeValueExpressionImpl@202419ff{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Card/invert/@activity/@ownedActivityNode.1/@storyPattern/@objectVariable.1/@attributeAssignment.0/@valueExpression}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.patterns.patternExpressions.impl.AttributeValueExpressionImpl@7d6e2561{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Card/invert/@activity/@ownedActivityNode.1/@storyPattern/@objectVariable.1/@attributeAssignment.1/@valueExpression}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.patterns.patternExpressions.impl.AttributeValueExpressionImpl@3160f3ea{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Card/invert/@activity/@ownedActivityNode.2/@storyPattern/@objectVariable.0/@attributeAssignment.0/@valueExpression}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.patterns.patternExpressions.impl.AttributeValueExpressionImpl@2be51759{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Card/invert/@activity/@ownedActivityNode.2/@storyPattern/@objectVariable.0/@attributeAssignment.1/@valueExpression}' must be set&#xA;ERROR : The required feature 'name' of 'SDMLanguage.activities.impl.StopNodeImpl@2b8e183b{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Card/invert/@activity/@ownedActivityNode.3}' must be set&#xA;ERROR : The required feature 'comment' of 'SDMLanguage.activities.impl.StopNodeImpl@2b8e183b{platform:/resource/LearningBoxLanguage/model/LearningBoxLanguage.ecore#//Card/invert/@activity/@ownedActivityNode.3}' must be set" incomingEdges="_Uh24IwegEeaTj6I_DhVGAA _Uh4GQAegEeaTj6I_DhVGAA" width="12" height="10">
+        <target xmi:type="ecore:EClass" href="LearningBoxLanguage.ecore#//Card"/>
+        <semanticElements xmi:type="ecore:EClass" href="LearningBoxLanguage.ecore#//Card"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_UhZlIAegEeaTj6I_DhVGAA" labelColor="239,41,41" description="_UhRpUAegEeaTj6I_DhVGAA" borderColor="239,41,41" backgroundStyle="Liquid" foregroundColor="255,252,216"/>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_UhymsAegEeaTj6I_DhVGAA" name="back : EString" tooltipText="">
+          <target xmi:type="ecore:EAttribute" href="LearningBoxLanguage.ecore#//Card/back"/>
+          <semanticElements xmi:type="ecore:EAttribute" href="LearningBoxLanguage.ecore#//Card/back"/>
+          <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_UhymsQegEeaTj6I_DhVGAA" labelAlignment="LEFT">
+            <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_UhzNwAegEeaTj6I_DhVGAA" name="face : EString" tooltipText="">
+          <target xmi:type="ecore:EAttribute" href="LearningBoxLanguage.ecore#//Card/face"/>
+          <semanticElements xmi:type="ecore:EAttribute" href="LearningBoxLanguage.ecore#//Card/face"/>
+          <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_UhzNwQegEeaTj6I_DhVGAA" labelAlignment="LEFT" description="_UhnAgAegEeaTj6I_DhVGAA">
+            <labelFormat>bold</labelFormat>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_UhzNwgegEeaTj6I_DhVGAA" name="partitionHistory : EString" tooltipText="">
+          <target xmi:type="ecore:EAttribute" href="LearningBoxLanguage.ecore#//Card/partitionHistory"/>
+          <semanticElements xmi:type="ecore:EAttribute" href="LearningBoxLanguage.ecore#//Card/partitionHistory"/>
+          <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_Uhz00AegEeaTj6I_DhVGAA" labelAlignment="LEFT" description="_UhnAgAegEeaTj6I_DhVGAA">
+            <labelFormat>bold</labelFormat>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_Uhz00QegEeaTj6I_DhVGAA" name="invert()" tooltipText="invert()">
+          <target xmi:type="activities:MoflonEOperation" href="LearningBoxLanguage.ecore#//Card/invert"/>
+          <semanticElements xmi:type="activities:MoflonEOperation" href="LearningBoxLanguage.ecore#//Card/invert"/>
+          <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_Uh0b4AegEeaTj6I_DhVGAA" labelAlignment="LEFT">
+            <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='Operation']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='Operation']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_Uh0b4QegEeaTj6I_DhVGAA" name="printCard()" tooltipText="printCard()">
+          <target xmi:type="activities:MoflonEOperation" href="LearningBoxLanguage.ecore#//Card/printCard"/>
+          <semanticElements xmi:type="activities:MoflonEOperation" href="LearningBoxLanguage.ecore#//Card/printCard"/>
+          <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_Uh1C8AegEeaTj6I_DhVGAA" labelAlignment="LEFT">
+            <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='Operation']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='Operation']"/>
+        </ownedElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_UhazQAegEeaTj6I_DhVGAA" name="FastCard" tooltipText="" outgoingEdges="_Uh24IwegEeaTj6I_DhVGAA" width="12" height="10">
+        <target xmi:type="ecore:EClass" href="LearningBoxLanguage.ecore#//FastCard"/>
+        <semanticElements xmi:type="ecore:EClass" href="LearningBoxLanguage.ecore#//FastCard"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_UhbaUAegEeaTj6I_DhVGAA" backgroundStyle="Liquid" foregroundColor="255,252,216">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_Uh1qAAegEeaTj6I_DhVGAA" name="[0..1] previous" sourceNode="_UhS3cAegEeaTj6I_DhVGAA" targetNode="_UhS3cAegEeaTj6I_DhVGAA">
+        <target xmi:type="ecore:EReference" href="LearningBoxLanguage.ecore#//Partition/previous"/>
+        <semanticElements xmi:type="ecore:EReference" href="LearningBoxLanguage.ecore#//Partition/previous"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_Uh2REAegEeaTj6I_DhVGAA" routingStyle="manhattan" strokeColor="0,0,0">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']/@style"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_Uh2REQegEeaTj6I_DhVGAA" showIcon="false">
+            <customFeatures>labelSize</customFeatures>
+          </centerLabelStyle>
+          <endLabelStyle xmi:type="diagram:EndLabelStyle" xmi:id="_Uh2REgegEeaTj6I_DhVGAA" showIcon="false" labelColor="39,76,114">
+            <customFeatures>labelSize</customFeatures>
+          </endLabelStyle>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_Uh2REwegEeaTj6I_DhVGAA" name="[0..1] next" sourceNode="_UhS3cAegEeaTj6I_DhVGAA" targetNode="_UhS3cAegEeaTj6I_DhVGAA">
+        <target xmi:type="ecore:EReference" href="LearningBoxLanguage.ecore#//Partition/next"/>
+        <semanticElements xmi:type="ecore:EReference" href="LearningBoxLanguage.ecore#//Partition/next"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_Uh24IAegEeaTj6I_DhVGAA" routingStyle="manhattan" strokeColor="0,0,0">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']/@style"/>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_Uh24IQegEeaTj6I_DhVGAA" showIcon="false">
+            <customFeatures>labelSize</customFeatures>
+          </centerLabelStyle>
+          <endLabelStyle xmi:type="diagram:EndLabelStyle" xmi:id="_Uh24IgegEeaTj6I_DhVGAA" showIcon="false" labelColor="39,76,114">
+            <customFeatures>labelSize</customFeatures>
+          </endLabelStyle>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_Uh24IwegEeaTj6I_DhVGAA" sourceNode="_UhazQAegEeaTj6I_DhVGAA" targetNode="_UhXv8AegEeaTj6I_DhVGAA">
+        <target xmi:type="ecore:EClass" href="LearningBoxLanguage.ecore#//FastCard"/>
+        <semanticElements xmi:type="ecore:EGenericType" href="LearningBoxLanguage.ecore#//FastCard/@eGenericSuperTypes.0"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_Uh3fMAegEeaTj6I_DhVGAA" targetArrow="InputClosedArrow" routingStyle="tree">
+          <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']/@style"/>
+          <beginLabelStyle xmi:type="diagram:BeginLabelStyle" xmi:id="_Uh3fMQegEeaTj6I_DhVGAA" showIcon="false">
+            <labelFormat>italic</labelFormat>
+          </beginLabelStyle>
+          <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_Uh3fMgegEeaTj6I_DhVGAA" showIcon="false"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_Uh4GQAegEeaTj6I_DhVGAA" sourceNode="_UhS3cAegEeaTj6I_DhVGAA" targetNode="_UhXv8AegEeaTj6I_DhVGAA" beginLabel="[0..1] cardContainer" endLabel="[0..*] card">
+        <target xmi:type="ecore:EReference" href="LearningBoxLanguage.ecore#//Partition/card"/>
+        <semanticElements xmi:type="ecore:EReference" href="LearningBoxLanguage.ecore#//Partition/card"/>
+        <semanticElements xmi:type="ecore:EReference" href="LearningBoxLanguage.ecore#//Card/cardContainer"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_Uh4tUwegEeaTj6I_DhVGAA" description="_Uh4tUAegEeaTj6I_DhVGAA" sourceArrow="FillDiamond" routingStyle="manhattan" strokeColor="0,0,0">
+          <beginLabelStyle xmi:type="diagram:BeginLabelStyle" xmi:id="_Uh4tVAegEeaTj6I_DhVGAA" showIcon="false"/>
+          <endLabelStyle xmi:type="diagram:EndLabelStyle" xmi:id="_Uh4tVQegEeaTj6I_DhVGAA" showIcon="false"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='Bi-directional%20EC_EReference%20']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_Uh4tVgegEeaTj6I_DhVGAA" sourceNode="_UhH4UAegEeaTj6I_DhVGAA" targetNode="_UhS3cAegEeaTj6I_DhVGAA" beginLabel="[0..1] box" endLabel="[0..*] containedPartition">
+        <target xmi:type="ecore:EReference" href="LearningBoxLanguage.ecore#//Box/containedPartition"/>
+        <semanticElements xmi:type="ecore:EReference" href="LearningBoxLanguage.ecore#//Partition/box"/>
+        <semanticElements xmi:type="ecore:EReference" href="LearningBoxLanguage.ecore#//Box/containedPartition"/>
+        <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_Uh5UYAegEeaTj6I_DhVGAA" description="_Uh4tUAegEeaTj6I_DhVGAA" sourceArrow="FillDiamond" routingStyle="manhattan" strokeColor="0,0,0">
+          <beginLabelStyle xmi:type="diagram:BeginLabelStyle" xmi:id="_Uh5UYQegEeaTj6I_DhVGAA" showIcon="false"/>
+          <endLabelStyle xmi:type="diagram:EndLabelStyle" xmi:id="_Uh5UYgegEeaTj6I_DhVGAA" showIcon="false"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='Bi-directional%20EC_EReference%20']"/>
+      </ownedDiagramElements>
+      <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']"/>
+      <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_Tz17lQegEeaTj6I_DhVGAA"/>
+      <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer"/>
+      <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@additionalLayers[name='Package']"/>
+      <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@additionalLayers[name='Validation']"/>
+      <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Archetype']/@ownedRepresentationExtensions[name='Entities%20With%20Archetypes']/@layers[name='Archetypes']"/>
+      <target xmi:type="ecore:EPackage" href="LearningBoxLanguage.ecore#/"/>
+    </ownedRepresentations>
+    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
+  </ownedViews>
+  <ownedViews xmi:type="viewpoint:DRepresentationContainer" xmi:id="_S3C8IAegEeaTj6I_DhVGAA">
+    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']"/>
+  </ownedViews>
+  <ownedViews xmi:type="viewpoint:DRepresentationContainer" xmi:id="_S3EKQAegEeaTj6I_DhVGAA">
+    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Archetype']"/>
+  </ownedViews>
+  <ownedViews xmi:type="viewpoint:DRepresentationContainer" xmi:id="_S3H0oAegEeaTj6I_DhVGAA">
+    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Generation']"/>
+  </ownedViews>
+</viewpoint:DAnalysis>
