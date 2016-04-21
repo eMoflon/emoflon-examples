@@ -1,6 +1,5 @@
 **/bin/
 **/gen/
-**/model/
 **/.temp
 **/*Lexer.java
 **/*Parser.java
