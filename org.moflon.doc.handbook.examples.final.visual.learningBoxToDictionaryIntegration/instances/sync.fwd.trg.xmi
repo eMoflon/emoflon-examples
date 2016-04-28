@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="ASCII"?>
-<DictionaryLanguage:Dictionary xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:DictionaryLanguage="platform:/plugin/DictionaryLanguage/model/DictionaryLanguage.ecore" title="English Numbers">
-  <entry content="One : Eins" level="master"/>
-  <entry content="Three : Drei" level="beginner"/>
-  <entry content="Two : Zwei" level="advanced"/>
-  <entry content="Four: Vier" level="beginner"/>
-</DictionaryLanguage:Dictionary>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?eclipse version="3.0"?><plugin>
-  <extension point="org.eclipse.emf.ecore.generated_package">
-    <package class="LearningBoxToDictionaryIntegration.LearningBoxToDictionaryIntegrationPackage" genModel="model/LearningBoxToDictionaryIntegration.genmodel" uri="platform:/plugin/LearningBoxToDictionaryIntegration/model/LearningBoxToDictionaryIntegration.ecore"/>
-  </extension>
-  <extension point="org.eclipse.emf.ecore.generated_package">
-    <package class="LearningBoxToDictionaryIntegration.Rules.RulesPackage" genModel="model/LearningBoxToDictionaryIntegration.genmodel" uri="platform:/plugin/LearningBoxToDictionaryIntegration/model/LearningBoxToDictionaryIntegration.ecore#//Rules"/>
-  </extension>
-</plugin>
