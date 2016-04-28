@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DictionaryLanguage:Dictionary
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:DictionaryLanguage="platform:/plugin/DictionaryLanguage/model/DictionaryLanguage.ecore"
+    xsi:schemaLocation="platform:/plugin/DictionaryLanguage/model/DictionaryLanguage.ecore ../../DictionaryLanguage/model/DictionaryLanguage.ecore"
+    title="English Numbers">
+  <entry content="One:Eins"
+      level="beginner"/>
+  <entry content="Two:Zwei"
+      level="advanced"/>
+  <entry content="Three:Drei"
+      level="master"/>
+</DictionaryLanguage:Dictionary>

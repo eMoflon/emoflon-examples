@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ASCII"?>
+<LearningBoxLanguage:Box xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:LearningBoxLanguage="platform:/plugin/LearningBoxLanguage/model/LearningBoxLanguage.ecore" name="English Numbers">
+  <containedPartition previous="//@containedPartition.1" index="2">
+    <card back="Question One" face="Answer Eins"/>
+  </containedPartition>
+  <containedPartition next="//@containedPartition.2">
+    <card back="Question Three" face="Answer Drei"/>
+  </containedPartition>
+  <containedPartition previous="//@containedPartition.1" next="//@containedPartition.0" index="1">
+    <card back="Question Two" face="Answer Zwei"/>
+  </containedPartition>
+</LearningBoxLanguage:Box>

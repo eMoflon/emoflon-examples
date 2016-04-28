@@ -1,0 +1,43 @@
+#using LearningBoxToDictionaryIntegration.*
+#using AttrCondDefLibrary.*
+
+#rule BoxToDictionaryRule #with LearningBoxToDictionaryIntegration
+
+#source { 
+	++ box : Box {
+		++ - containedPartition->partition0
+		++ - containedPartition->partition1
+		++ - containedPartition->partition2
+	}
+	
+	++ partition0 : Partition {
+		index := 0
+		++ -next->partition1
+	}
+	
+	++ partition1 : Partition {
+		index := 1
+		++ -next->partition2
+		++ -previous->partition0
+	}
+	
+	++ partition2 : Partition {
+		index := 2
+		++ -previous->partition0
+	}
+}
+
+#target {
+	++ dictionary : Dictionary
+}
+
+#correspondence {
+	++ boxToDictionary : BoxToDictionary {
+		#src->box
+		#trg->dictionary
+	}
+}
+
+#attributeConditions {
+	eq(box.name, dictionary.title)	
+}

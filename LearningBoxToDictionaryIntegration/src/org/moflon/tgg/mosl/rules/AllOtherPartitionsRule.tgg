@@ -1,0 +1,38 @@
+#using LearningBoxToDictionaryIntegration.*
+#using AttrCondDefLibrary.*
+
+#rule AllOtherPartitionsRule #with LearningBoxToDictionaryIntegration
+
+#source { 
+	box : Box {
+		-containedPartition->partition0
+		-containedPartition->partitionN
+		++ -containedPartition->partitionNN
+	}
+	
+	partition0 : Partition
+	
+	partitionN : Partition {
+		-previous->partition0
+		-next->noPartition
+		++ -next->partitionNN
+	}
+	
+	++ partitionNN : Partition {
+		++ -previous->partition0
+	}
+	
+	! noPartition : Partition
+}
+
+#target {
+	
+}
+
+#correspondence {
+	
+}
+
+#attributeConditions {
+	add(partitionN.index, 1, partitionNN.index)
+}

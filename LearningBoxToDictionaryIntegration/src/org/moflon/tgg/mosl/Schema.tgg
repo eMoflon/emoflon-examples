@@ -1,0 +1,35 @@
+// Add imports here
+#import "platform:/plugin/DictionaryLanguage/model/DictionaryLanguage.ecore"
+#import "platform:/plugin/LearningBoxLanguage/model/LearningBoxLanguage.ecore"  
+
+#schema LearningBoxToDictionaryIntegration
+	
+#source {
+	LearningBoxLanguage
+}
+
+#target { 
+	DictionaryLanguage
+} 
+
+#correspondence {
+	BoxToDictionary {
+		#src->Box
+		#trg->Dictionary
+	}
+	
+	CardToEntry {
+		#src->Card
+		#trg->Entry
+	}
+}
+
+#attributeConditions {
+	
+	#userDefined
+	indexToLevel(0:EInt, 1:Estring){
+		#sync: BB, BF
+		#gen:
+	}
+
+}

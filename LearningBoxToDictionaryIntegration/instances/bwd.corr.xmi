@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ASCII"?>
+<org.moflon.tgg.runtime:CorrespondenceModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:LearningBoxToDictionaryIntegration="platform:/plugin/LearningBoxToDictionaryIntegration/model/LearningBoxToDictionaryIntegration.ecore" xmlns:org.moflon.tgg.runtime="platform:/plugin/org.moflon.tgg.runtime/model/Runtime.ecore">
+  <correspondences xsi:type="LearningBoxToDictionaryIntegration:BoxToDictionary">
+    <source href="bwd.trg.xmi#/"/>
+    <target href="bwd.src.xmi#/"/>
+  </correspondences>
+  <correspondences xsi:type="LearningBoxToDictionaryIntegration:CardToEntry">
+    <source href="bwd.trg.xmi#//@containedPartition.1/@card.0"/>
+    <target href="bwd.src.xmi#//@entry.2"/>
+  </correspondences>
+  <correspondences xsi:type="LearningBoxToDictionaryIntegration:CardToEntry">
+    <source href="bwd.trg.xmi#//@containedPartition.2/@card.0"/>
+    <target href="bwd.src.xmi#//@entry.1"/>
+  </correspondences>
+  <correspondences xsi:type="LearningBoxToDictionaryIntegration:CardToEntry">
+    <source href="bwd.trg.xmi#//@containedPartition.0/@card.0"/>
+    <target href="bwd.src.xmi#//@entry.0"/>
+  </correspondences>
+  <source href="bwd.trg.xmi#/"/>
+  <target href="bwd.src.xmi#/"/>
+</org.moflon.tgg.runtime:CorrespondenceModel>

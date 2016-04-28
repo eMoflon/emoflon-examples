@@ -1,0 +1,44 @@
+#using LearningBoxToDictionaryIntegration.*
+#using AttrCondDefLibrary.*
+
+#rule CardToEntryRule #with LearningBoxToDictionaryIntegration
+
+#source { 
+	box : Box
+	
+	partition : Partition {
+		-box->box
+	}
+	
+	++ card : Card {
+		++ -cardContainer->partition
+	}
+}
+
+#target {
+	dictionary : Dictionary {
+		++ -entry->entry
+	}
+	
+	++ entry : Entry
+	
+}
+
+#correspondence {
+	boxToDictionary : BoxToDictionary {
+		#src->box
+		#trg->dictionary
+	}
+	
+	++ cardToEntry : CardToEntry {
+		#src->card
+		#trg->entry
+	}
+}
+
+#attributeConditions {
+	addPrefix("Question ", word, card.back)
+	addPrefix("Answer ", meaning, card.face)
+	concat(":", word, meaning, entry.content)
+	indexToLevel(partition.index, entry.level)
+}
