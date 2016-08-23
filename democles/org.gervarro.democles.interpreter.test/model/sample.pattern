@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ASCII"?>
+<specification:Pattern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:emf="http://gervarro.org/democles/constraint/emf.ecore" xmlns:specification="http://gervarro.org/democles/specification.ecore" name="pattern">
+  <symbolicParameters xsi:type="emf:EMFVariable" name="P">
+    <eClassifier xsi:type="ecore:EClass" href="http://gervarro.org/democles/specification.ecore#//Pattern"/>
+  </symbolicParameters>
+  <symbolicParameters xsi:type="emf:EMFVariable" name="PB">
+    <eClassifier xsi:type="ecore:EClass" href="http://gervarro.org/democles/specification.ecore#//PatternBody"/>
+  </symbolicParameters>
+  <symbolicParameters xsi:type="emf:EMFVariable" name="C">
+    <eClassifier xsi:type="ecore:EClass" href="http://gervarro.org/democles/specification.ecore#//Constraint"/>
+  </symbolicParameters>
+  <symbolicParameters xsi:type="emf:EMFVariable" name="V">
+    <eClassifier xsi:type="ecore:EClass" href="http://gervarro.org/democles/specification.ecore#//Variable"/>
+  </symbolicParameters>
+  <bodies>
+    <constraints xsi:type="emf:Reference">
+      <parameters reference="//@symbolicParameters.2"/>
+      <parameters reference="//@symbolicParameters.3"/>
+      <eModelElement xsi:type="ecore:EReference" href="http://gervarro.org/democles/specification.ecore#//Constraint/parameters"/>
+    </constraints>
+    <constraints xsi:type="emf:Reference">
+      <parameters reference="//@symbolicParameters.1"/>
+      <parameters reference="//@symbolicParameters.2"/>
+      <eModelElement xsi:type="ecore:EReference" href="http://gervarro.org/democles/specification.ecore#//PatternBody/constraints"/>
+    </constraints>
+    <constraints xsi:type="emf:Reference">
+      <parameters reference="//@symbolicParameters.1"/>
+      <parameters reference="//@symbolicParameters.3"/>
+      <eModelElement xsi:type="ecore:EReference" href="http://gervarro.org/democles/specification.ecore#//PatternBody/localVariables"/>
+    </constraints>
+    <constraints xsi:type="emf:Reference">
+      <parameters reference="//@symbolicParameters.1"/>
+      <parameters reference="//@symbolicParameters.1"/>
+      <eModelElement xsi:type="ecore:EReference" href="http://gervarro.org/democles/specification.ecore#//Pattern/bodies"/>
+    </constraints>
+  </bodies>
+</specification:Pattern>
