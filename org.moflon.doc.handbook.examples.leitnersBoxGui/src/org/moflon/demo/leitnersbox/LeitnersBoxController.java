@@ -50,8 +50,10 @@ public class LeitnersBoxController {
    public void loadXmiFile()
    {
       // TODO: Change this statement if you did not persist your instance file in 'instances'
-      File file = new File("../LearningBoxLanguage/instances/Box.xmi");
-			
+      File file = new File("instances/Box.xmi");
+	  if(!file.exists()){
+		  file = new File("instances/BoxSample.xmi");
+	  }
       resource = resSet.createResource(URI.createFileURI(file.getAbsolutePath()));
 
       try
