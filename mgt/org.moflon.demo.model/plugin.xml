@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated doublelinkedlist -->
+      <package
+            uri="http://www.moflon.org/demo/model/doublelinkedlist"
+            class="doublelinkedlist.DoublelinkedlistPackage"
+            genModel="model/doublelinkedlist.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated Doublelinkedlist -->
+      <package
+            uri="platform:/plugin/org.moflon.demo.model/model/Doublelinkedlist.ecore"
+            class="org.moflon.demo.doublelinkedlist.DoublelinkedlistPackage"
+            genModel="model/Doublelinkedlist.genmodel"/>
+   </extension>
+
+</plugin>
