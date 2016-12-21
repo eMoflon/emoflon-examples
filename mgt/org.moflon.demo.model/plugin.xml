@@ -11,7 +11,7 @@
       <package
             uri="http://www.moflon.org/demo/model/doublelinkedlist"
             class="doublelinkedlist.DoublelinkedlistPackage"
-            genModel="model/doublelinkedlist.genmodel"/>
+            genModel="model/Doublelinkedlist.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
