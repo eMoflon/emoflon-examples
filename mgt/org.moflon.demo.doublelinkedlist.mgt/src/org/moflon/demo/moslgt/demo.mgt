@@ -1,4 +1,4 @@
-#import "platform:/resource/org.moflon.demo.model/model/Doublelinkedlist.ecore"
+#import "platform:/resource/org.moflon.demo.doublelinkedlist.mgt/model/Mgt.ecore"
 
 #package org.moflon.demo.doublelinkedlist
 

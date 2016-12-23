@@ -1,6 +1,9 @@
 Manifest-Version: 1.0
 Bundle-SymbolicName: org.moflon.demo.doublelinkedlist.mgt;singleton:=t
  rue
+Export-Package: org.moflon.demo.doublelinkedlist.impl,
+ org.moflon.demo.doublelinkedlist.util,
+ org.moflon.demo.doublelinkedlist
 Bundle-Name: org.moflon.demo.doublelinkedlist.mgt
 Bundle-Version: 1.0
 Require-Bundle: org.eclipse.emf.ecore,
