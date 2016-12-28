@@ -8,7 +8,7 @@
    #operation deleteNode() : void {
       this : Node // rkluge: Maybe we can omit this local variable and provide an implicit 'this' (as in Java/C++/...)? Actually, this is not a local (and therefore initially unbound) variable - it is *always* bound.
       #invoke deleteNode(this)
-      #return // rkluge: Originally I thought that we could leave this out, but sometimes we may skip out of the control flow of a void-returning function.
+      #return 
    }
 
    #operation insertNodeAfter(newNode : Node) : void {
