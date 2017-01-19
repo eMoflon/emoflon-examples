@@ -1,4 +1,4 @@
-package csp.constraints;
+package LearningBoxToDictionaryIntegration.csp.constraints;
 
 
 import java.util.Arrays;
