@@ -31,6 +31,7 @@ import org.gervarro.democles.common.DataFrame;
 import org.gervarro.democles.common.runtime.ListOperationBuilder;
 import org.gervarro.democles.common.runtime.SearchPlanOperation;
 import org.gervarro.democles.common.runtime.SpecificationExtendedVariableRuntime;
+import org.gervarro.democles.constraint.CoreConstraintModule;
 import org.gervarro.democles.constraint.emf.EMFConstraintModule;
 import org.gervarro.democles.interpreter.InterpreterPatternMatcherModule;
 import org.gervarro.democles.interpreter.InterpreterSearchPlanAlgorithm;
@@ -45,16 +46,17 @@ import org.gervarro.democles.plan.common.DefaultAlgorithm;
 import org.gervarro.democles.plan.common.SearchPlanOperationBuilder;
 import org.gervarro.democles.plan.emf.EMFSearchPlanOperationBuilder;
 import org.gervarro.democles.plan.emf.EMFWeightedOperationBuilder;
+import org.gervarro.democles.runtime.BatchInterpreterSearchPlanOperation;
 import org.gervarro.democles.runtime.DepthFirstTraversalStrategy;
 import org.gervarro.democles.runtime.GenericOperationBuilder;
 import org.gervarro.democles.runtime.InterpretableAdornedOperation;
 import org.gervarro.democles.runtime.InterpretedDataFrame;
-import org.gervarro.democles.runtime.QueryableRemappingOperation;
 import org.gervarro.democles.specification.emf.EMFDemoclesPatternMetamodelPlugin;
 import org.gervarro.democles.specification.emf.EMFPatternBuilder;
 import org.gervarro.democles.specification.emf.Pattern;
 import org.gervarro.democles.specification.emf.SpecificationPackage;
 import org.gervarro.democles.specification.emf.constraint.EMFTypeModule;
+import org.gervarro.democles.specification.emf.constraint.RelationalTypeModule;
 import org.gervarro.democles.specification.emf.constraint.emf.emf.EMFTypePackage;
 import org.gervarro.democles.specification.impl.DefaultPattern;
 import org.gervarro.democles.specification.impl.DefaultPatternBody;
@@ -91,19 +93,21 @@ public class BootstrappingTest {
 				new EMFTypeModule(emfTypeModule);
 		patternBuilder.addVariableTypeSwitch(internalEMFTypeModule.getVariableTypeSwitch());
 		patternBuilder.addConstraintTypeSwitch(internalEMFTypeModule.getConstraintTypeSwitch());
+      RelationalTypeModule relationalTypeModule = new RelationalTypeModule(CoreConstraintModule.INSTANCE);
+      patternBuilder.addVariableTypeSwitch(relationalTypeModule.getVariableTypeSwitch());
+      patternBuilder.addConstraintTypeSwitch(relationalTypeModule.getConstraintTypeSwitch());
 
 		final DefaultPattern internalPatternSpecification =
 				patternBuilder.build(patternSpecification);
 
 		// 3) Initializes the pattern matcher module
-		final LinkedList<SearchPlanOperationBuilder<WeightedOperation<SearchPlanOperation<QueryableRemappingOperation>,Integer>,QueryableRemappingOperation>> builders =
-				new LinkedList<SearchPlanOperationBuilder<WeightedOperation<SearchPlanOperation<QueryableRemappingOperation>,Integer>,QueryableRemappingOperation>>();
-		builders.add(new CombinedSearchPlanOperationBuilder<WeightedOperation<SearchPlanOperation<QueryableRemappingOperation>,Integer>,SearchPlanOperation<QueryableRemappingOperation>,QueryableRemappingOperation>(
-				new EMFSearchPlanOperationBuilder<QueryableRemappingOperation>(),
-				new EMFWeightedOperationBuilder<SearchPlanOperation<QueryableRemappingOperation>,QueryableRemappingOperation>()));
+		final LinkedList<SearchPlanOperationBuilder<WeightedOperation<SearchPlanOperation<BatchInterpreterSearchPlanOperation>, Integer>, BatchInterpreterSearchPlanOperation>> builders = new LinkedList<>();
+		builders.add(new CombinedSearchPlanOperationBuilder<WeightedOperation<SearchPlanOperation<BatchInterpreterSearchPlanOperation>,Integer>,SearchPlanOperation<BatchInterpreterSearchPlanOperation>,BatchInterpreterSearchPlanOperation>(
+				new EMFSearchPlanOperationBuilder<BatchInterpreterSearchPlanOperation>(),
+				new EMFWeightedOperationBuilder<SearchPlanOperation<BatchInterpreterSearchPlanOperation>,BatchInterpreterSearchPlanOperation>()));
 		
-		DefaultAlgorithm<InterpreterCombiner,SearchPlanOperation<QueryableRemappingOperation>,QueryableRemappingOperation> searchPlanAlgorithm = 
-			new DefaultAlgorithm<InterpreterCombiner,SearchPlanOperation<QueryableRemappingOperation>,QueryableRemappingOperation>(builders);
+		DefaultAlgorithm<InterpreterCombiner,SearchPlanOperation<BatchInterpreterSearchPlanOperation>,BatchInterpreterSearchPlanOperation> searchPlanAlgorithm = 
+			new DefaultAlgorithm<InterpreterCombiner,SearchPlanOperation<BatchInterpreterSearchPlanOperation>,BatchInterpreterSearchPlanOperation>(builders);
 		InterpreterPatternMatcherModule patternMatcherModule =
 			new InterpreterPatternMatcherModule(DepthFirstTraversalStrategy.INSTANCE);
 		patternMatcherModule.setSearchPlanAlgorithm(
