@@ -270,9 +270,9 @@ public class SimpleGraphInterpreterTest
       return trianglePattern;
    }
 
-   private void validatPatternSpecification(Pattern patternSpecification)
+   private void validatPatternSpecification(Pattern pattern)
    {
-      patternSpecification.getSymbolicParameters().forEach(parameter -> {
+      pattern.getSymbolicParameters().forEach(parameter -> {
          if (parameter.getName() == null)
             throw new IllegalArgumentException("Symbolic parameter has no name: " + parameter);
          if (parameter instanceof EMFVariable)
@@ -284,13 +284,13 @@ public class SimpleGraphInterpreterTest
       });
 
       // Reverse engineered from org.gervarro.democles.operation.emf.EMFNativeOperationBuilder.getConstraintOperation(ConstraintType, List<? extends VR>)
-      patternSpecification.getBodies().forEach(b -> b.getConstraints().forEach(constraint -> {
-         List<ConstraintParameter> parametersWithNullReference = constraint.getParameters().stream()
+      pattern.getBodies().forEach(body -> body.getConstraints().forEach(constraint -> {
+         final List<ConstraintParameter> parametersWithNullReference = constraint.getParameters().stream()
                .filter(parameter -> (parameter == null || parameter.getReference() == null)).collect(Collectors.toList());
          if (!parametersWithNullReference.isEmpty())
             throw new IllegalArgumentException(
                   String.format("Attribute constraint '%s' has parameters with 'null' reference: '%s'", constraint, formatConstraintParameters(constraint)));
-
+         
          if (constraint instanceof Attribute)
          {
             if (constraint.getParameters().size() != 2)
