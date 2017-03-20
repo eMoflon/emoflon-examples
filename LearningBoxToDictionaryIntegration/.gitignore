@@ -5,3 +5,4 @@
 /model/*.xmi
 /model/*.genmodel
 !/**/.keep*
+/**/AttrCondDefLibrary.tgg
