@@ -4,3 +4,13 @@
 /model/*.ecore
 /model/*.genmodel
 /model/*.xmi
+
+/**/*.cf
+/**/*.dfs
+/**/*.sdm
+/**/*.black
+/**/*.red
+/**/*.green
+/**/*.expression
+/**/*.binding
+/**/*.bindingAndBlack
