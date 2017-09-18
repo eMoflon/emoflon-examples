@@ -1,0 +1,29 @@
+import "platform:/resource/org.moflon.handbook.learningboxlanguage/model/Learningboxlanguage.ecore"
+
+package org.moflon.handbook.learningboxlanguage
+
+class Partition {
+   operation empty() : void {
+       
+   }
+}
+
+class Card {
+    operation invert() : void {
+        
+    }
+    
+    operation printCard() : void {
+        
+    }
+}
+
+class Box {
+    operation addToStringRep() : void {
+        
+    }
+    
+    operation grow() : void {
+        
+    }
+}

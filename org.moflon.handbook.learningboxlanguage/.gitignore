@@ -1,0 +1,18 @@
+/bin
+/gen/*
+/model/*.ecore
+/model/*.genmodel
+/model/*.xmi
+# The file AttrCondDefLibrary.tgg is not meant to be edited
+/**/AttrCondDefLibrary.tgg
+!/**/.keep*
+
+/**/*.black
+/**/*.red
+/**/*.green
+/**/*.expression
+/**/*.binding
+/**/*.bindingAndBlack
+/**/*.dfs
+/**/*.cf
+/**/*.sdm
