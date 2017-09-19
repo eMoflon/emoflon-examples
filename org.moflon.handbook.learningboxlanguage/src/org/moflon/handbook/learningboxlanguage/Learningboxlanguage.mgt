@@ -3,13 +3,172 @@ import "http://www.eclipse.org/emf/2002/Ecore"
 
 package org.moflon.handbook.learningboxlanguage
 
-class Partition {
-   operation empty() : void {
-       
-   }
+
+class Box {
+    operation grow() : void {
+        // Pattern invocation
+        if(addNewPatternToBox(this : Box))
+        {
+            return true
+        } else {
+            // Operation invocation
+            if(this.initializeBox()) {
+                return true
+            } else {
+                return false
+            } 
+        }
+    }
+    
+    pattern addNewPatternToBox(box : Box) {
+        firstPartitionInBox : Partition
+        lastPartitionInBox : Partition
+        
+        ++ newPartition : Partition
+        
+        box : Box {
+            -containedPartitions-> firstPartition
+            -containedPartitions-> lastPartition
+            ++ -containedPartitions-> newPartition
+        }
+        
+        nac noPrevious {
+            forbiddedPreviousPartition : Partition
+            firstPartition : Partition {
+                -previous->forbiddedPreviousPartition
+            }
+        }
+        
+        nac noNext {
+            forbiddenNextPartition : Partition
+            lastPartiion : Partition {
+                -next-> forbiddenNextPartition
+            }
+        }
+            
+    }
+    
+    operation initializeBox() : EBoolean {
+        if(buildPartitions(this : Box)) {
+            return true
+        } else {
+            return false
+        }
+    }
+    
+    pattern buildPartitions(box : Box) {
+        ++ firstPartition : Partition {
+            -next-> lastPartition
+        }
+        
+        ++ lastPartition : Partition {
+            -previous-> firstPartition
+        }
+        
+        box : Box {
+            ++ -containedPartitions-> firstPartition
+            ++ -containedPartitions-> lastPartition
+        }    
+        
+        nac {
+            forbiddenPartition : Partition {
+                -box-> box
+            }
+        }
+    }
+    
+    operation toString() : EString {
+        for(allPartitions(this : Box, partition : Partition))
+        {
+            for(allCards(partition : Partition, card : Card)) {
+                this.addToStringRep(card);
+            }
+        }    
+        return this.stringRep
+    }
+    
+    pattern allPartitions(box : Box, partition : Partition) {
+        box : Box {
+            -containedPartitions-> partition
+        }
+    }
+    
+    pattern allCards(partition : Partition, card : Card) {
+        partition : Partition {
+            -card-> card
+        }
+    }
+    
+    // Handled via injection
+    operation addToStringRep() : void
+    
+    // Handled via injection
+    operation determineNextSize() : EInt   
 }
 
 class Card {
+    operation check(card : Card, guess : EString) : EBoolean {
+        if(checkCard(card, guess)) {
+            if (isFastCard(card)) {
+                invoke promoteFastCard(card)
+            }
+            else {
+                invoke promoteCard(card)
+            }
+        } else {
+            invoke penalizeCard(card)
+        }
+    } 
+    
+    pattern checkCard(card : Card, guess : EString) {
+        attributeconditions {
+            eq(card.face, guess)
+        }
+    }
+    
+    pattern isFastCard(card : Card) {
+        card : FastCard
+    }
+    
+    pattern promoteFastCard(card : FastCard) {
+        currentPartition : Partition 
+        futurePartition : Partition
+        card : Card {
+            -- -cardContainer-> currentPartition
+            ++ -cardContainer-> futurePartition
+        }
+        
+        nac {
+            forbiddenNextPartition : Partition
+            futurePartition : Partition {
+                -next-> forbiddenNextPartition
+            }            
+        }
+        
+    }
+    
+    pattern promoteCard(card : Card) {
+        currentPartition : Partition 
+        futurePartition : Partition {
+            -previous-> currentPartition
+        }
+        card {
+            -- -cardContainer-> currentPartition
+            ++ -cardContainer-> futurePartition
+        }
+    }
+    
+    pattern penalizeCard(card : Card) {
+        currentPartition : Partition 
+        futurePartition : Partition {
+            -next-> currentPartition
+        }
+        card {
+            -- -cardContainer-> currentPartition
+            ++ -cardContainer-> futurePartition
+        }
+    }
+    
     operation invert() : void {
         
     }
@@ -18,33 +177,15 @@ class Card {
         
     }
     
-    operation check(card : Card, guess : EString) : EBoolean {
-        
-    } 
     
     operation removeCard(card : Card) : Card {
         
     }
 }
 
-class Box {
-    operation addToStringRep() : void {
-        
-    }
-    
-    operation grow() : void {
-        
-    }
-    
-    operation determineNextSize() : EInt {
-        
-    }
-    
-    operation toString() : EString {
-        
-    }
-    
-    operation initializeBox() : EBoolean {
-        
-    }
+
+class Partition {
+   operation empty() : void {
+       
+   }
 }
