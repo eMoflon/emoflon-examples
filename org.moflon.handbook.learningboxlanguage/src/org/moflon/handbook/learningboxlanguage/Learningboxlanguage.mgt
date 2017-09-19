@@ -18,10 +18,9 @@ class Card {
         
     }
     
-    /*
     operation check(card : Card, guess : EString) : EBoolean {
         
-    } */
+    } 
     
     operation removeCard(card : Card) : Card {
         
@@ -37,7 +36,6 @@ class Box {
         
     }
     
-    /*
     operation determineNextSize() : EInt {
         
     }
@@ -49,5 +47,4 @@ class Box {
     operation initializeBox() : EBoolean {
         
     }
-    */
 }
