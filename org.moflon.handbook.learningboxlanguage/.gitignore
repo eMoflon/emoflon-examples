@@ -3,3 +3,13 @@
 /model/*.genmodel
 /model/*.xmi
 !/**/.keep*
+
+/**/*.black
+/**/*.red
+/**/*.green
+/**/*.expression
+/**/*.binding
+/**/*.bindingAndBlack
+/**/*.dfs
+/**/*.cf
+/**/*.sdm

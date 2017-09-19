@@ -1,0 +1,53 @@
+import "platform:/resource/org.moflon.handbook.learningboxlanguage/model/Learningboxlanguage.ecore"
+import "http://www.eclipse.org/emf/2002/Ecore"
+
+package org.moflon.handbook.learningboxlanguage
+
+class Partition {
+   operation empty() : void {
+       
+   }
+}
+
+class Card {
+    operation invert() : void {
+        
+    }
+    
+    operation printCard() : void {
+        
+    }
+    
+    /*
+    operation check(card : Card, guess : EString) : EBoolean {
+        
+    } */
+    
+    operation removeCard(card : Card) : Card {
+        
+    }
+}
+
+class Box {
+    operation addToStringRep() : void {
+        
+    }
+    
+    operation grow() : void {
+        
+    }
+    
+    /*
+    operation determineNextSize() : EInt {
+        
+    }
+    
+    operation toString() : EString {
+        
+    }
+    
+    operation initializeBox() : EBoolean {
+        
+    }
+    */
+}
