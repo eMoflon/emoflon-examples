@@ -32,6 +32,7 @@ class Box {
             ++ -containedPartitions-> newPartition
         }
         
+        // Named NACs
         nac noPrevious {
             forbiddedPreviousPartition : Partition
             firstPartition : Partition {
@@ -107,6 +108,35 @@ class Box {
 }
 
 class Card {
+
+    operation invert() : void {
+        tempCard : Card
+        invoke initializeTempCard(this : Card, tempCard : Card)
+        invoke swapVariables(this : Card, tempCard : Card)
+    }
+    
+    pattern initializeTempCard(this : Card, tmp : Card) {
+        constraints {
+            eq(this.face, tmp.back)
+            eq(tmp.face, this.back)
+        }
+    }
+    
+    pattern swapVariables(this : Card, tempCard : Card) {
+        constraints {
+            eq(this.face, tempCard.back)
+            eq(this.back, tempCard.face)
+        }
+    }
+    
+    // Handled by injection
+    operation printCard() : void
+    
+    
+}
+
+
+class Partition {
     operation check(card : Card, guess : EString) : EBoolean {
         if(checkCard(card, guess)) {
             if (isFastCard(card)) {
@@ -121,7 +151,7 @@ class Card {
     } 
     
     pattern checkCard(card : Card, guess : EString) {
-        attributeconditions {
+        constraints {
             eq(card.face, guess)
         }
     }
@@ -137,8 +167,12 @@ class Card {
             -- -cardContainer-> currentPartition
             ++ -cardContainer-> futurePartition
         }
+        constraints {
+            +(futurePartition.partitionSize', futurePartitionSize, 1)
+            -(currentPartition.partitionSize', currentPartition, 1)
+        }
         
-        nac {
+        nac noNextPartition {
             forbiddenNextPartition : Partition
             futurePartition : Partition {
                 -next-> forbiddenNextPartition
@@ -148,44 +182,59 @@ class Card {
     }
     
     pattern promoteCard(card : Card) {
-        currentPartition : Partition 
-        futurePartition : Partition {
-            -previous-> currentPartition
-        }
+        currentPartition : Partition {
+            -next-> futurePartition
+        } 
+        futurePartition : Partition 
         card {
             -- -cardContainer-> currentPartition
             ++ -cardContainer-> futurePartition
+        }
+        
+        // Attribute constraints
+        constraints {
+            +(futurePartition.partitionSize', futurePartitionSize, 1)
+            -(currentPartition.partitionSize', currentPartition, 1)
         }
     }
     
     pattern penalizeCard(card : Card) {
-        currentPartition : Partition 
-        futurePartition : Partition {
-            -next-> currentPartition
+        currentPartition : Partition {
+            -previous-> currentPartition
         }
+        futurePartition : Partition 
         card {
             -- -cardContainer-> currentPartition
             ++ -cardContainer-> futurePartition
         }
+        constraints {
+            +(futurePartition.partitionSize', futurePartitionSize, 1)
+            -(currentPartition.partitionSize', currentPartition, 1)
+        }
     }
     
-    operation invert() : void {
-        
+    operation empty() : void {
+        for(deleteCard(this : Partition))
     }
-    
-    operation printCard() : void {
-        
+   
+    pattern deleteCard(partition : Partition) {
+        -- card : Card {
+            -cardContainer-> partition
+        }
     }
-    
-    
+   
     operation removeCard(card : Card) : Card {
-        
+        invoke removeCard(this: Partition, card : Card)
+        return card
     }
-}
-
-
-class Partition {
-   operation empty() : void {
-       
-   }
+    
+    pattern removeCard(partition : Partition, card : Card) {
+        partition : Partition {
+            -- -card-> card
+        }
+        
+        card : Card {
+            -- -cardContainer-> partition
+        }
+    }
 }
