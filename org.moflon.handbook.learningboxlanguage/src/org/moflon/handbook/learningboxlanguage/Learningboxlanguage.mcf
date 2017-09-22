@@ -1,0 +1,86 @@
+import "platform:/resource/org.moflon.handbook.learningboxlanguage/model/Learningboxlanguage.ecore"
+import "http://www.eclipse.org/emf/2002/Ecore"
+
+// The pattern specification
+import "platform:/resource/org.moflon.handbook.learningboxlanguage/src/org/moflon/handbook/learningboxlanguage/Learningboxlanguage.mpt"
+
+package org.moflon.handbook.learningboxlanguage
+
+
+class Box {
+    operation grow() : void {
+        // Pattern invocation
+        if(Box::addNewPatternToBox(this : Box))
+        {
+            return true
+        } else {
+            // Operation invocation
+            if(this.initializeBox()) {
+                return true
+            } else {
+                return false
+            } 
+        }
+    }
+    
+    operation initializeBox() : EBoolean {
+        if(Box::buildPartitions(this : Box)) {
+            return true
+        } else {
+            return false
+        }
+    }
+    
+    operation toString() : EString {
+        for(Box::allPartitions(this : Box, partition : Partition))
+        {
+            for(Box::allCards(partition : Partition, card : Card)) {
+                this.addToStringRep(card);
+            }
+        }    
+        return this.stringRep
+    }
+
+    // Handled via injection
+    operation addToStringRep() : void
+    
+    // Handled via injection
+    operation determineNextSize() : EInt   
+}
+
+class Card {
+
+    operation invert() : void {
+        tempCard : Card
+        invoke Card::initializeTempCard(this : Card, tempCard : Card)
+        invoke Card::swapVariables(this : Card, tempCard : Card)
+    }
+    
+    // Handled by injection
+    operation printCard() : void 
+}
+
+
+class Partition {
+    operation check(card : Card, guess : EString) : EBoolean {
+        if(Partition::checkCard(card, guess)) {
+            if (Partition::isFastCard(card)) {
+                invoke Partition::promoteFastCard(card)
+            }
+            else {
+                invoke Partition::promoteCard(card)
+            }
+        } else {
+            invoke Partition::penalizeCard(card)
+        }
+    } 
+    
+    operation empty() : void {
+        for(Partition::deleteCard(this : Partition))
+    }
+   
+    operation removeCard(card : Card) : Card {
+        invoke Partition::removeCard(this: Partition, card : Card)
+        return card
+    }
+}

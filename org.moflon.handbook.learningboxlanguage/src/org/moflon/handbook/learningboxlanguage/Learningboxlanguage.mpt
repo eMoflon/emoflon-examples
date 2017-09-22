@@ -1,24 +1,6 @@
-import "platform:/resource/org.moflon.handbook.learningboxlanguage/model/Learningboxlanguage.ecore"
 import "http://www.eclipse.org/emf/2002/Ecore"
 
-package org.moflon.handbook.learningboxlanguage
-
-
-class Box {
-    operation grow() : void {
-        // Pattern invocation
-        if(addNewPatternToBox(this : Box))
-        {
-            return true
-        } else {
-            // Operation invocation
-            if(this.initializeBox()) {
-                return true
-            } else {
-                return false
-            } 
-        }
-    }
+module Box {
     
     pattern addNewPatternToBox(box : Box) {
         firstPartitionInBox : Partition
@@ -49,14 +31,6 @@ class Box {
             
     }
     
-    operation initializeBox() : EBoolean {
-        if(buildPartitions(this : Box)) {
-            return true
-        } else {
-            return false
-        }
-    }
-    
     pattern buildPartitions(box : Box) {
         ++ firstPartition : Partition {
             -next-> lastPartition
@@ -78,16 +52,6 @@ class Box {
         }
     }
     
-    operation toString() : EString {
-        for(allPartitions(this : Box, partition : Partition))
-        {
-            for(allCards(partition : Partition, card : Card)) {
-                this.addToStringRep(card);
-            }
-        }    
-        return this.stringRep
-    }
-    
     pattern allPartitions(box : Box, partition : Partition) {
         box : Box {
             -containedPartitions-> partition
@@ -99,22 +63,9 @@ class Box {
             -card-> card
         }
     }
-    
-    // Handled via injection
-    operation addToStringRep() : void
-    
-    // Handled via injection
-    operation determineNextSize() : EInt   
 }
 
-class Card {
-
-    operation invert() : void {
-        tempCard : Card
-        invoke initializeTempCard(this : Card, tempCard : Card)
-        invoke swapVariables(this : Card, tempCard : Card)
-    }
-    
+module Card {
     pattern initializeTempCard(this : Card, tmp : Card) {
         constraints {
             eq(this.face, tmp.back)
@@ -128,28 +79,10 @@ class Card {
             eq(this.back, tempCard.face)
         }
     }
-    
-    // Handled by injection
-    operation printCard() : void
-    
-    
 }
 
 
-class Partition {
-    operation check(card : Card, guess : EString) : EBoolean {
-        if(checkCard(card, guess)) {
-            if (isFastCard(card)) {
-                invoke promoteFastCard(card)
-            }
-            else {
-                invoke promoteCard(card)
-            }
-        } else {
-            invoke penalizeCard(card)
-        }
-    } 
-    
+module Partition {
     pattern checkCard(card : Card, guess : EString) {
         constraints {
             eq(card.face, guess)
@@ -212,20 +145,11 @@ class Partition {
             -(currentPartition.partitionSize', currentPartition, 1)
         }
     }
-    
-    operation empty() : void {
-        for(deleteCard(this : Partition))
-    }
    
     pattern deleteCard(partition : Partition) {
         -- card : Card {
             -cardContainer-> partition
         }
-    }
-   
-    operation removeCard(card : Card) : Card {
-        invoke removeCard(this: Partition, card : Card)
-        return card
     }
     
     pattern removeCard(partition : Partition, card : Card) {
