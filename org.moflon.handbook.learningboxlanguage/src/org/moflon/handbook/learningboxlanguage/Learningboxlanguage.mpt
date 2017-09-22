@@ -1,3 +1,4 @@
+import "platform:/resource/org.moflon.handbook.learningboxlanguage/model/Learningboxlanguage.ecore"
 import "http://www.eclipse.org/emf/2002/Ecore"
 
 module Box {

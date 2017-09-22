@@ -9,7 +9,7 @@ package org.moflon.handbook.learningboxlanguage
 
 class Box {
     operation grow() : void {
-        // Pattern invocation
+        // Pattern invocation (Box (before '::') is the module in this context)
         if(Box::addNewPatternToBox(this : Box))
         {
             return true
