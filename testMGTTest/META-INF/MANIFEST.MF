@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: testMGTTest
+Bundle-SymbolicName: testMGTTest
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: DoubleLinkedListDemo;bundle-version="0.1.0",
+ org.moflon.demo.doublelinkedlist;bundle-version="1.0.0"
