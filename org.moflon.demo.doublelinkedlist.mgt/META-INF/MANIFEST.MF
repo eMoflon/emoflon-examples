@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: org.moflon.demo.doublelinkedlist.mgt;singleton:=t
+ rue
+Export-Package: org.moflon.demo.doublelinkedlist.impl,
+ org.moflon.demo.doublelinkedlist.util,
+ org.moflon.demo.doublelinkedlist
+Bundle-Name: org.moflon.demo.mgt.doublelinkedlist
+Bundle-Version: 1.0
+Require-Bundle: org.eclipse.emf.ecore,
+ org.eclipse.emf.ecore.xmi,
+ org.moflon.core.utilities
+Bundle-ManifestVersion: 2
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Vendor: TU Darmstadt

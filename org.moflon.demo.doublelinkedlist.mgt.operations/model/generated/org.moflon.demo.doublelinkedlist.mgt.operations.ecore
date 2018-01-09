@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moslControlFlow:GraphTransformationControlFlowFile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:moslControlFlow="http://www.moflon.org/gt/mosl/controlflow/language/MOSLControlFlow"
+    name="org.moflon.demo.mgt.doublelinkedlistmodel">
+  <eClassifiers xsi:type="ecore:EClass" name="Node">
+    <eOperations xsi:type="moslControlFlow:MethodDec" name="deleteNode">
+      <startStatement xsi:type="moslControlFlow:ObjectVariableStatement" name="this"
+          eType="#//Node">
+        <next xsi:type="moslControlFlow:PatternStatement">
+          <next xsi:type="moslControlFlow:MethodCallStatement" name="#//Node/deleteNode">
+            <next xsi:type="moslControlFlow:ReturnStatement"/>
+          </next>
+          <patternReference module="../../src/DoubleLinkList.mpt#//@modules.0" pattern="../../src/DoubleLinkList.mpt#//@modules.0/@definitions.1"/>
+          <parameters object="#//Node/deleteNode/this"/>
+        </next>
+      </startStatement>
+    </eOperations>
+    <eOperations xsi:type="moslControlFlow:MethodDec" name="insertNodeAfter">
+      <eParameters xsi:type="moslControlFlow:MethodParameter" name="newNode" eType="#//Node"/>
+      <startStatement xsi:type="moslControlFlow:OperationCallStatement" object="#//Node/insertNodeAfter/newNode"
+          call="#//Node/insertNodeBefore">
+        <next xsi:type="moslControlFlow:PatternStatement">
+          <patternReference module="../../src/DoubleLinkList.mpt#//@modules.0" pattern="../../src/DoubleLinkList.mpt#//@modules.0/@definitions.2"/>
+          <parameters>
+            <create name="this" eType="#//Node"/>
+          </parameters>
+          <parameters object="#//Node/insertNodeAfter/newNode"/>
+        </next>
+        <parameters>
+          <create name="this" eType="#//Node"/>
+        </parameters>
+      </startStatement>
+    </eOperations>
+    <eOperations xsi:type="moslControlFlow:MethodDec" name="insertNodeBefore">
+      <eParameters xsi:type="moslControlFlow:MethodParameter" name="newNde" eType="#//Node"/>
+      <startStatement xsi:type="moslControlFlow:PatternStatement">
+        <patternReference module="../../src/DoubleLinkList.mpt#//@modules.0" pattern="../../src/DoubleLinkList.mpt#//@modules.0/@definitions.3"/>
+        <parameters object="#//Node/insertNodeBefore/newNde"/>
+        <parameters>
+          <create name="this" eType="#//Node"/>
+        </parameters>
+      </startStatement>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="next" lowerBound="1" eType="#//Node"
+        eOpposite="#//Node/previous"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="previous" lowerBound="1"
+        eType="#//Node" eOpposite="#//Node/next"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="container" lowerBound="1"
+        eType="#//List" eOpposite="#//List/elements"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="label" ordered="false"
+        lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="List">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="elements" upperBound="-1"
+        eType="#//Node" containment="true" eOpposite="#//Node/container"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" ordered="false" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <imports name="platform:/plugin/org.moflon.demo.mgt.doublelinkedlistmodel/model/Doublelinkedlistmodel.ecore"/>
+  <includedPatterns importURI="DoubleLinkList.mpt"/>
+</moslControlFlow:GraphTransformationControlFlowFile>

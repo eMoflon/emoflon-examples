@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:activities="platform:/plugin/SDMLanguage/model/SDMLanguage.ecore#//activities"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="doublelinkedlist" nsURI="platform:/plugin/org.moflon.demo.model/model/Doublelinkedlist.ecore"
+    nsPrefix="org.moflon.demo.doublelinkedlist">
+  <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+    <details key="basePackage" value="org.moflon.demo"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="Node">
+    <eOperations xsi:type="activities:MoflonEOperation" name="deleteNode">
+      <activity owningOperation="#//Node/deleteNode">
+        <ownedActivityEdge source="#//Node/deleteNode/@activity/@ownedActivityNode.0"
+            target="#//Node/deleteNode/@activity/@ownedActivityNode.1"/>
+        <ownedActivityEdge source="#//Node/deleteNode/@activity/@ownedActivityNode.1"
+            target="#//Node/deleteNode/@activity/@ownedActivityNode.2"/>
+        <ownedActivityNode xsi:type="activities:StartNode" outgoing="#//Node/deleteNode/@activity/@ownedActivityEdge.0"/>
+        <ownedActivityNode xsi:type="activities:StoryNode" name="deleteNode" comment="deleteNode"
+            outgoing="#//Node/deleteNode/@activity/@ownedActivityEdge.1" incoming="#//Node/deleteNode/@activity/@ownedActivityEdge.0">
+          <storyPattern comment="deleteNode">
+            <objectVariable type="#//Node" name="newNext" incomingLink="#//Node/deleteNode/@activity/@ownedActivityNode.1/@storyPattern/@linkVariable.1 #//Node/deleteNode/@activity/@ownedActivityNode.1/@storyPattern/@linkVariable.2"/>
+            <objectVariable type="#//Node" name="this" outgoingLink="#//Node/deleteNode/@activity/@ownedActivityNode.1/@storyPattern/@linkVariable.0 #//Node/deleteNode/@activity/@ownedActivityNode.1/@storyPattern/@linkVariable.1"
+                bindingState="BOUND"/>
+            <objectVariable type="#//Node" name="next" incomingLink="#//Node/deleteNode/@activity/@ownedActivityNode.1/@storyPattern/@linkVariable.0"
+                outgoingLink="#//Node/deleteNode/@activity/@ownedActivityNode.1/@storyPattern/@linkVariable.2"
+                bindingOperator="DESTROY"/>
+            <linkVariable name="next" target="#//Node/deleteNode/@activity/@ownedActivityNode.1/@storyPattern/@objectVariable.2"
+                source="#//Node/deleteNode/@activity/@ownedActivityNode.1/@storyPattern/@objectVariable.1"
+                type="#//Node/next" bindingOperator="DESTROY"/>
+            <linkVariable name="next" target="#//Node/deleteNode/@activity/@ownedActivityNode.1/@storyPattern/@objectVariable.0"
+                source="#//Node/deleteNode/@activity/@ownedActivityNode.1/@storyPattern/@objectVariable.1"
+                type="#//Node/next" bindingOperator="CREATE"/>
+            <linkVariable name="next" target="#//Node/deleteNode/@activity/@ownedActivityNode.1/@storyPattern/@objectVariable.0"
+                source="#//Node/deleteNode/@activity/@ownedActivityNode.1/@storyPattern/@objectVariable.2"
+                type="#//Node/next" bindingOperator="DESTROY"/>
+          </storyPattern>
+        </ownedActivityNode>
+        <ownedActivityNode xsi:type="activities:StopNode" incoming="#//Node/deleteNode/@activity/@ownedActivityEdge.1"/>
+      </activity>
+    </eOperations>
+    <eOperations xsi:type="activities:MoflonEOperation" name="insertNodeAfter">
+      <eParameters name="newNode" eType="#//Node"/>
+      <activity owningOperation="#//Node/insertNodeAfter">
+        <ownedActivityEdge source="#//Node/insertNodeAfter/@activity/@ownedActivityNode.0"
+            target="#//Node/insertNodeAfter/@activity/@ownedActivityNode.2"/>
+        <ownedActivityEdge source="#//Node/insertNodeAfter/@activity/@ownedActivityNode.2"
+            target="#//Node/insertNodeAfter/@activity/@ownedActivityNode.1"/>
+        <ownedActivityNode xsi:type="activities:StartNode" outgoing="#//Node/insertNodeAfter/@activity/@ownedActivityEdge.0"/>
+        <ownedActivityNode xsi:type="activities:StopNode" incoming="#//Node/insertNodeAfter/@activity/@ownedActivityEdge.1"/>
+        <ownedActivityNode xsi:type="activities:StoryNode" name="insertNodeAfter"
+            comment="insertNodeAfter" outgoing="#//Node/insertNodeAfter/@activity/@ownedActivityEdge.1"
+            incoming="#//Node/insertNodeAfter/@activity/@ownedActivityEdge.0">
+          <storyPattern comment="insertNodeAfter">
+            <objectVariable type="#//Node" name="next" incomingLink="#//Node/insertNodeAfter/@activity/@ownedActivityNode.2/@storyPattern/@linkVariable.0 #//Node/insertNodeAfter/@activity/@ownedActivityNode.2/@storyPattern/@linkVariable.2"/>
+            <objectVariable type="#//Node" name="newNode" incomingLink="#//Node/insertNodeAfter/@activity/@ownedActivityNode.2/@storyPattern/@linkVariable.1"
+                outgoingLink="#//Node/insertNodeAfter/@activity/@ownedActivityNode.2/@storyPattern/@linkVariable.0"
+                bindingState="BOUND"/>
+            <objectVariable type="#//Node" name="this" outgoingLink="#//Node/insertNodeAfter/@activity/@ownedActivityNode.2/@storyPattern/@linkVariable.1 #//Node/insertNodeAfter/@activity/@ownedActivityNode.2/@storyPattern/@linkVariable.2"
+                bindingState="BOUND"/>
+            <linkVariable name="next" target="#//Node/insertNodeAfter/@activity/@ownedActivityNode.2/@storyPattern/@objectVariable.0"
+                source="#//Node/insertNodeAfter/@activity/@ownedActivityNode.2/@storyPattern/@objectVariable.1"
+                type="#//Node/next" bindingOperator="CREATE"/>
+            <linkVariable name="next" target="#//Node/insertNodeAfter/@activity/@ownedActivityNode.2/@storyPattern/@objectVariable.1"
+                source="#//Node/insertNodeAfter/@activity/@ownedActivityNode.2/@storyPattern/@objectVariable.2"
+                type="#//Node/next" bindingOperator="CREATE"/>
+            <linkVariable name="next" target="#//Node/insertNodeAfter/@activity/@ownedActivityNode.2/@storyPattern/@objectVariable.0"
+                source="#//Node/insertNodeAfter/@activity/@ownedActivityNode.2/@storyPattern/@objectVariable.2"
+                type="#//Node/next" bindingOperator="DESTROY"/>
+          </storyPattern>
+        </ownedActivityNode>
+      </activity>
+    </eOperations>
+    <eOperations xsi:type="activities:MoflonEOperation" name="insertNodeBefore">
+      <eParameters name="newNode" eType="#//Node"/>
+      <activity owningOperation="#//Node/insertNodeBefore">
+        <ownedActivityEdge source="#//Node/insertNodeBefore/@activity/@ownedActivityNode.0"
+            target="#//Node/insertNodeBefore/@activity/@ownedActivityNode.2"/>
+        <ownedActivityEdge source="#//Node/insertNodeBefore/@activity/@ownedActivityNode.1"
+            target="#//Node/insertNodeBefore/@activity/@ownedActivityNode.0"/>
+        <ownedActivityNode xsi:type="activities:StoryNode" name="insertNodeBefore"
+            comment="insertNodeBefore" outgoing="#//Node/insertNodeBefore/@activity/@ownedActivityEdge.0"
+            incoming="#//Node/insertNodeBefore/@activity/@ownedActivityEdge.1">
+          <storyPattern comment="insertNodeBefore">
+            <objectVariable type="#//Node" name="newNode" incomingLink="#//Node/insertNodeBefore/@activity/@ownedActivityNode.0/@storyPattern/@linkVariable.2"
+                outgoingLink="#//Node/insertNodeBefore/@activity/@ownedActivityNode.0/@storyPattern/@linkVariable.0"
+                bindingState="BOUND"/>
+            <objectVariable type="#//Node" name="this" incomingLink="#//Node/insertNodeBefore/@activity/@ownedActivityNode.0/@storyPattern/@linkVariable.0 #//Node/insertNodeBefore/@activity/@ownedActivityNode.0/@storyPattern/@linkVariable.1"
+                bindingState="BOUND"/>
+            <objectVariable type="#//Node" name="previous" outgoingLink="#//Node/insertNodeBefore/@activity/@ownedActivityNode.0/@storyPattern/@linkVariable.1 #//Node/insertNodeBefore/@activity/@ownedActivityNode.0/@storyPattern/@linkVariable.2"/>
+            <linkVariable name="next" target="#//Node/insertNodeBefore/@activity/@ownedActivityNode.0/@storyPattern/@objectVariable.1"
+                source="#//Node/insertNodeBefore/@activity/@ownedActivityNode.0/@storyPattern/@objectVariable.0"
+                type="#//Node/next" bindingOperator="CREATE"/>
+            <linkVariable name="next" target="#//Node/insertNodeBefore/@activity/@ownedActivityNode.0/@storyPattern/@objectVariable.1"
+                source="#//Node/insertNodeBefore/@activity/@ownedActivityNode.0/@storyPattern/@objectVariable.2"
+                type="#//Node/next" bindingOperator="DESTROY"/>
+            <linkVariable name="next" target="#//Node/insertNodeBefore/@activity/@ownedActivityNode.0/@storyPattern/@objectVariable.0"
+                source="#//Node/insertNodeBefore/@activity/@ownedActivityNode.0/@storyPattern/@objectVariable.2"
+                type="#//Node/next" bindingOperator="CREATE"/>
+          </storyPattern>
+        </ownedActivityNode>
+        <ownedActivityNode xsi:type="activities:StartNode" outgoing="#//Node/insertNodeBefore/@activity/@ownedActivityEdge.1"/>
+        <ownedActivityNode xsi:type="activities:StopNode" incoming="#//Node/insertNodeBefore/@activity/@ownedActivityEdge.0"/>
+      </activity>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="next" lowerBound="1" eType="#//Node"
+        eOpposite="#//Node/previous"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="previous" lowerBound="1"
+        eType="#//Node" eOpposite="#//Node/next"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="container" lowerBound="1"
+        eType="#//List" eOpposite="#//List/elements"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="label" ordered="false"
+        lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="List">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="elements" upperBound="-1"
+        eType="#//Node" containment="true" eOpposite="#//Node/container"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" ordered="false" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+</ecore:EPackage>

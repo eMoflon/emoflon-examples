@@ -1,0 +1,82 @@
+import "platform:/resource/org.moflon.demo.mgt.doublelinkedlist/model/Doublelinkedlist.ecore"
+
+package org.moflon.demo.doublelinkedlist
+
+class Node {
+    operation deleteNode() : void {
+      this : Node
+      invoke deleteNode(this)
+      return
+    }
+
+    operation insertNodeAfter(newNode : Node) : void {
+       invoke insertNodeAfter(this : Node, newNode)
+    }
+
+    operation insertNodeBefore(newNode : Node) : void {
+       invoke insertNodeBefore(newNode, this)
+    }
+    
+    pattern deleteNode(this : Node) {
+       this : Node {
+          -- - next -> next
+          ++ - next -> newNode
+       }
+    
+       -- next : Node {
+          -- - next -> newNode
+       }
+    
+       newNode : Node
+    }
+    
+
+    pattern insertNodeAfter(this : Node, newNode : Node){
+       this : Node {
+          -- - next-> nextNode
+          ++ - next-> newNode
+       }
+    
+       newNode : Node {
+          ++ - next -> nextNode
+       }
+    
+       nextNode : Node
+    }
+    
+    pattern insertNodeBefore(this : Node, newNode : Node){
+       previous : Node{
+          -- - next -> this
+          ++ - next -> newNode
+       }
+    
+       newNode : Node {
+          ++ - next -> this
+       } 
+       
+    }
+
+
+}
+
+class List {
+    operation getFirstNode() : Node {
+        invoke getFirstNodePattern(this : List, firstNode : Node)
+        return firstNode 
+    }
+   
+    pattern getFirstNodePattern(list : List, result2 : Node)
+    { 
+        result2 : Node {
+            - container -> list
+        }
+        
+        nac {
+            forbiddenPreviousNode : Node
+            result2 : Node {
+                - previous -> forbiddenPreviousNode
+            }   
+        }
+    }
+    
+}
