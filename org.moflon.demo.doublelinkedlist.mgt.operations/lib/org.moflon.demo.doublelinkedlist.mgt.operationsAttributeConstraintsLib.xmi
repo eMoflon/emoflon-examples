@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="ASCII"?>
 <org.moflon.sdm.constraints.operationspecification:AttributeConstraintLibrary xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:org.moflon.sdm.constraints.operationspecification="platform:/plugin/org.moflon.sdm.constraints.operationspecification/model/Operationspecification.ecore">
-  <constraintSpecifications symbol="yaoSpecificPredicate">
+  <constraintSpecifications symbol="myOwnPredicate">
     <parameterTypes>
-      <type xsi:type="ecore:EDataType" href="../../org.eclipse.emf.ecore/model/Ecore.ecore#//EDouble"/>
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
     </parameterTypes>
     <parameterTypes>
-      <type xsi:type="ecore:EDataType" href="../../org.eclipse.emf.ecore/model/Ecore.ecore#//EDouble"/>
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
     </parameterTypes>
     <parameterTypes>
-      <type xsi:type="ecore:EDataType" href="../../org.eclipse.emf.ecore/model/Ecore.ecore#//EString"/>
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </parameterTypes>
   </constraintSpecifications>
 </org.moflon.sdm.constraints.operationspecification:AttributeConstraintLibrary>

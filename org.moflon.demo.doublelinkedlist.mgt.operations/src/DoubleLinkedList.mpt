@@ -2,7 +2,7 @@ import "platform:/plugin/org.moflon.demo.mgt.doublelinkedlistmodel/model/Doublel
 
 module NodePatterns {
 
-defineConstraint yaoSpecificPredicate(a : EDouble, b : EDouble, c  : EString)
+defineConstraint myOwnPredicate(a : EDouble, b : EDouble, c  : EString)
 
 pattern deleteNode(this : Node) {
    this : Node {
@@ -17,8 +17,7 @@ pattern deleteNode(this : Node) {
    newNode : Node
 
    attributeConstraints {
-  // 	yaoSpecificPredicate (0.2,0.3,4)
-   // foo("blubb", true)
+    myOwnPredicate(3.0, 1.0, "Test")
    }
 }
 
