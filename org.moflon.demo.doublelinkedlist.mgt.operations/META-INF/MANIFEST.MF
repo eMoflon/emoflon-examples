@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: MOSL-GT demo (operation implementations)
+Bundle-SymbolicName: org.moflon.demo.doublelinkedlist.mgt.operations
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: org.moflon.demo.mgt.doublelinkedlistmodel;bundle-version="0.1.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8

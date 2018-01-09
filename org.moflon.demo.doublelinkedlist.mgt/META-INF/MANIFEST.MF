@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bundle-SymbolicName: org.moflon.demo.mgt.doublelinkedlist;singleton:=t
+Bundle-SymbolicName: org.moflon.demo.doublelinkedlist.mgt;singleton:=t
  rue
 Export-Package: org.moflon.demo.doublelinkedlist.impl,
  org.moflon.demo.doublelinkedlist.util,

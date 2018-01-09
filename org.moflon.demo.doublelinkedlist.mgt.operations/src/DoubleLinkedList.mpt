@@ -1,0 +1,49 @@
+import "platform:/plugin/org.moflon.demo.mgt.doublelinkedlistmodel/model/Doublelinkedlistmodel.ecore"
+
+module NodePatterns {
+
+defineConstraint yaoSpecificPredicate(a : EDouble, b : EDouble, c  : EString)
+
+pattern deleteNode(this : Node) {
+   this : Node {
+      -- - next -> next
+      ++ - next -> newNode
+   }
+
+   -- next : Node {
+      -- - next -> newNode
+   }
+
+   newNode : Node
+
+   attributeConstraints {
+  // 	yaoSpecificPredicate (0.2,0.3,4)
+   // foo("blubb", true)
+   }
+}
+
+pattern insertNodeAfter(this : Node, newNode : Node){
+   this : Node {
+      -- - next-> nextNode
+      ++ - next-> newNode
+   }
+
+   newNode : Node {
+      ++ - next -> nextNode
+   }
+
+   nextNode : Node
+
+}
+
+pattern insertNodeBefore(this : Node, newNode : Node){
+   previous : Node{
+      -- - next -> this
+      ++ - next -> newNode
+   }
+
+   newNode : Node {
+      ++ - next -> this
+   }
+}
+}
