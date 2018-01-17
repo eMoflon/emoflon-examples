@@ -16,9 +16,10 @@ pattern deleteNode(this : Node) {
 
    newNode : Node
 
-   attributeConstraints {
-    myOwnPredicate(3.0, 1.0, "Test")
-   }
+    attributeConstraints {
+        myOwnPredicate(3.0, 1.0, "Test")
+        eq_EDouble(3.0, 1.0)
+    }
 }
 
 pattern insertNodeAfter(this : Node, newNode : Node){

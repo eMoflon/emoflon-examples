@@ -14,10 +14,10 @@ class Node{
 
    operation insertNodeAfter(newNode : Node) : void {
    	  newNode.insertNodeBefore(this : Node)
-      invoke NodePatterns::insertNodeAfter(this : Node, newNode) //rkluge: Should we really allow to mix this?
+      invoke NodePatterns::insertNodeAfter(this : Node, newNode)
    }
 
    operation insertNodeBefore(newNde : Node) : void {
-      invoke NodePatterns::insertNodeBefore(newNde, this:Node) // rkluge: this is bound!
+      invoke NodePatterns::insertNodeBefore(newNde, this:Node)
    }
 }
