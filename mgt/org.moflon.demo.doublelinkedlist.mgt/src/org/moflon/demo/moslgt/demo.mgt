@@ -1,0 +1,61 @@
+#import "platform:/resource/org.moflon.demo.doublelinkedlist.mgt/model/Mgt.ecore"
+
+#package org.moflon.demo.doublelinkedlist
+
+
+
+#class Node{
+   #operation deleteNode() : void {
+      this : Node // rkluge: Maybe we can omit this local variable and provide an implicit 'this' (as in Java/C++/...)? Actually, this is not a local (and therefore initially unbound) variable - it is *always* bound.
+      #invoke deleteNode(this)
+      #return 
+   }
+
+   #operation insertNodeAfter(newNode : Node) : void {
+      #invoke insertNodeAfter(this : Node, newNode) //rkluge: Should we really allow to mix this?
+   }
+
+   #operation insertNodeBefore(newNode : Node) : void {
+      #invoke insertNodeBefore(newNode, this) // rkluge: this is bound!
+   }
+   
+   
+}
+
+
+#pattern deleteNode(this : Node) {
+   this : Node {
+      -- - next -> next
+      ++ - next -> newNode
+   }
+
+   -- next : Node {
+      -- - next -> newNode
+   }
+
+   newNode : Node
+}
+
+#pattern insertNodeAfter(this : Node, newNode : Node){
+   this : Node {
+      -- - next-> nextNode
+      ++ - next-> newNode
+   }
+
+   newNode : Node {
+      ++ - next -> nextNode
+   }
+
+   nextNode : Node
+}
+
+#pattern insertNodeBefore(this : Node, newNode : Node){
+   previous : Node{
+      -- - next -> this
+      ++ - next -> newNode
+   }
+
+   newNode : Node {
+      ++ - next -> this
+   } 
+  }
