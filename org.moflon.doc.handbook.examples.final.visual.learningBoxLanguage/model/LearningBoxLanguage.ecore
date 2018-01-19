@@ -153,7 +153,7 @@
             <objectVariable type="//Card" name="card" bindingState="BOUND">
               <constraint>
                 <constraintExpression xsi:type="expressions:ComparisonExpression" operator="EQUAL">
-                  <rightExpression xsi:type="callExpressions:ParameterExpression" parameter="//Partition/check/card"/>
+                  <rightExpression xsi:type="callExpressions:ParameterExpression" parameter="//Partition/check/guess"/>
                   <leftExpression xsi:type="patternExpressions:AttributeValueExpression" object="//Partition/check/@activity/@ownedActivityNode.1/@storyPattern/@objectVariable.0" attribute="//Card/face"/>
                 </constraintExpression>
               </constraint>
