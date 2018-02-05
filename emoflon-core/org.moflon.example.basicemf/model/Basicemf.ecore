@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:activities="platform:/plugin/SDMLanguage/model/SDMLanguage.ecore#//activities" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:patternExpressions="platform:/plugin/SDMLanguage/model/SDMLanguage.ecore#//patterns/patternExpressions" name="doublelinkedlist" nsURI="platform:/plugin/org.moflon.demo.doublelinkedlist/model/Doublelinkedlist.ecore" nsPrefix="org.moflon.demo.doublelinkedlist">
+  <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+    <details key="basePackage" value="org.moflon.demo"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="Node">
+    <eOperations xsi:type="ecore:EOperation" name="deleteNode">
+    </eOperations>
+    <eOperations xsi:type="ecore:EOperation" name="insertNodeAfter">
+      <eParameters name="newNode" eType="//Node"/>
+    </eOperations>
+    <eOperations xsi:type="ecore:EOperation" name="insertNodeBefore">
+      <eParameters name="newNode" eType="//Node"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="next" lowerBound="1" eType="//Node" eOpposite="//Node/previous"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="previous" lowerBound="1" eType="//Node" eOpposite="//Node/next"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="container" lowerBound="1" eType="//List" eOpposite="//List/elements"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="label" ordered="false" lowerBound="1">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="List">
+    <eOperations xsi:type="ecore:EOperation" name="getFirstNode" eType="//Node">
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="elements" upperBound="-1" eType="//Node" containment="true" eOpposite="//Node/container"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" ordered="false" lowerBound="1">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+</ecore:EPackage>

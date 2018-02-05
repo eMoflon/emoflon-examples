@@ -1,0 +1,14 @@
+
+partial class ListImpl {
+
+
+
+@model getFirstNode ()<--      if (this.getElements().isEmpty())
+      {
+         return null;
+      }
+      else {
+         return this.getElements().stream().filter(node -> node.getPrevious() == null).findAny().get();
+      }-->
+
+}
